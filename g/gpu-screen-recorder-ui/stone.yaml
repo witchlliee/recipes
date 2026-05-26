@@ -4,7 +4,7 @@
 name        : gpu-screen-recorder
 version     : "1.12.2"
 release     : 1
-homepage    : https://dec05eba.com/snapshot
+homepage    : https://git.dec05eba.com/gpu-screen-recorder-ui/about/
 upstreams   :
     - https://dec05eba.com/snapshot/gpu-screen-recorder-ui.git.1.12.2.tar.gz :
         hash: f128bde2fb44f4ea189cea14c6fe16bb8b1ca082710666ada4700f2fd5c02e0c
