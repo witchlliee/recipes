@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : cachyos-ananicy-rules
+version     : "1.1.38"
+release     : 1
+homepage    : https://github.com/CachyOS/ananicy-rules
+upstreams   :
+    - https://github.com/CachyOS/ananicy-rules/archive/refs/tags/1.1.38.tar.gz : faad07b2ee4cdd423452ac723966ca81ecc2dacdd767d04077490c00b3e7db31
+summary     : Ananicy-cpp rules from CachyOS
+description : |
+    This is a ananicy-cpp-rules collection for ananicy-cpp maintained by the CachyOS team and the community.
+license     :
+    - GPL-3.0-only
+setup       : |
+    %patch %(pkgdir)/pin-games-to-perf-cores.patch
+install     : |
+    %install_file ananicy.conf          -t %(installroot)%(vendordir)/ananicy.d
+    %install_file 00-cgroups.cgroups    -t %(installroot)%(vendordir)/ananicy.d
+    %install_file 00-types.types        -t %(installroot)%(vendordir)/ananicy.d
+    cp -a 00-default %(installroot)%(vendordir)/ananicy.d
+    %install_file LICENSE -t %(installroot)%(datadir)/licenses/cachyos-ananicy-rules/
