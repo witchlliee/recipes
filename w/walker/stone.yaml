@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : walker
-version     : "2.14.2"
-release     : 1
+version     : "2.16.2"
+release     : 2
 homepage    : https://github.com/abenz1267/walker
 upstreams   :
-    - https://github.com/abenz1267/walker/archive/refs/tags/v2.14.2.tar.gz : 40346c6b2be3740d0f1e193f3ed16024009380287045f653ca32a3e45369a3c8
+    - https://github.com/abenz1267/walker/archive/refs/tags/v2.16.2.tar.gz : 9dfdbc68c89d907798b44345910e985230d3122d9e7b72c36141fba45a70bcce
 summary     : Multi-Purpose Launcher with a lot of features. Highly Customizable and fast.
 description : |
     A fast, customizable application launcher built with GTK4 and Rust, designed for Linux desktop environments. Walker provides a clean, modern interface for launching applications, running commands, performing calculations, and more.
