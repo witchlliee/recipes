@@ -5,424 +5,424 @@ name        : firefox-langpacks
 #### Don't modify the version manually, use the update.py script
 #### This package MUST have the same major version as the Firefox package, and should be updated in sync
 ##@@BEGIN_VERSION
-version     : "151.0.2"
+version     : "151.0.4"
 ##@@END_VERSION
-release     : 25
+release     : 27
 homepage    : https://www.mozilla.org/
 upstreams   :
 #### DO NOT MANUALLY MODIFY ANYTHING BETWEEN THE BEGIN_UPSTREAMS AND END_UPSTREAMS COMMENTS
 
 ##@@BEGIN_UPSTREAMS
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ach.xpi:
-        hash: 21b627a09763661ae8009ea3a5444804fd835657053f53f6f705ec80dafee503
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ach.xpi:
+        hash: 48e1c97fa3fa5f3584f5745cb161dedd9cd4b6590fbf03fab4f91a2de06bfc04
         rename: langpack-ach@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/af.xpi:
-        hash: 2b2106a0bf2ae406bb022db3b971c23e39b7828df86ffd4d80855afa17741664
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/af.xpi:
+        hash: 72575f6151ba976ee7819a04fbd9d04bcd5754454d18a20aa3fb81c9446b1da8
         rename: langpack-af@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/an.xpi:
-        hash: 0e85e629bfafc3e7d6f4a54c4004abde86a90a56cdb602710a0dcfe0c31dcc36
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/an.xpi:
+        hash: 8c59f33bd97dced962df1926038043ca204a8baf2494c614b6a05c4a7bbaa9f4
         rename: langpack-an@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ar.xpi:
-        hash: 2c43c81fe3c019e0b38809cacf5a8426a9b83840b18fc282e07eacc990c0a8e1
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ar.xpi:
+        hash: e2b84e77f99c0a9889facbcdc57a7bf2f579c0f7660bb24b6b362d47f101caf3
         rename: langpack-ar@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ast.xpi:
-        hash: ba616511e0b77444c32b1952672f4819f6bc3ad81458f418c4744a1cfcac1969
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ast.xpi:
+        hash: 8f4638efdc7bad7881cbe5f812839aace03f001f7611ea57edd9585f11c8b85c
         rename: langpack-ast@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/az.xpi:
-        hash: abf750037989117f8d153e856e33b231b8d1a82ddc8a64a47356f21d4162fefb
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/az.xpi:
+        hash: 5bf6a26fffe17dfba2b4d3678babe04b5e954bbd52c2bacc45311c9cc2b62610
         rename: langpack-az@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/be.xpi:
-        hash: b7623e672c4fdae2232bdf48405ee1ff756047d7b2e63dbedeee5a38468e3798
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/be.xpi:
+        hash: fe3fff4a74c31610364ea53cd120b0891bf65ca2efb1656dd76bc4afd6b09779
         rename: langpack-be@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/bg.xpi:
-        hash: 39c25afbe9bce0f8a06783008f65e3373ac9fa35136e676c2aefa73c47a33a70
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/bg.xpi:
+        hash: e1f100b140ee9e6172f206854d61a91fb1ea51bae1c086ff4d7387d4634a36cf
         rename: langpack-bg@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/bn.xpi:
-        hash: f15fbcab7a51e67c2a611d02e3f507af59a5727f8b1d869b8f16837286cb686f
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/bn.xpi:
+        hash: cc1be5443de39ad478214e35959ff0ba464b9bc887026ee9523be3e7205d2d09
         rename: langpack-bn@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/br.xpi:
-        hash: d31324acde1545228a2f0c26cdece00ae5ceffdd63da6b3b941eb845e9771f6f
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/br.xpi:
+        hash: 2d1f9efcedb91174e80bd8d9931aeb1c172b5b749e8106bedae2e5ba305cbfd0
         rename: langpack-br@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/bs.xpi:
-        hash: 7aac6140d5fa35bf24d921e468640b71c538d9123acc873f6ed5d1b29eaf0c8a
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/bs.xpi:
+        hash: c471fb367ff1809757384b0f6693e77cdfe37acf362ad095110725d06dea2de7
         rename: langpack-bs@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ca-valencia.xpi:
-        hash: d9d9c0637e902725672fcf9e057178d6b8a8fb6ad86044f16a07d50974303cc4
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ca-valencia.xpi:
+        hash: 64a938791919e899b99a992536db1b0272aa9759ea923c2ab552dd207afdac0d
         rename: langpack-ca-valencia@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ca.xpi:
-        hash: 24afc106ad0683ded95769639e962d2de552c8487055898d6be04e69cda1bbba
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ca.xpi:
+        hash: ce74d55ca88b70801152bdc592129c36010d1184f54c5fe860b3c7adb483fb4d
         rename: langpack-ca@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/cak.xpi:
-        hash: ff7f27b34dd01de9f6b203568ac029201458a38af896fe0fd59959bd85116f63
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/cak.xpi:
+        hash: eabf0405f5cce1579e31760795fcbf7dded41b51fd7f1b7913763ecd435aa204
         rename: langpack-cak@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/cs.xpi:
-        hash: b6d39044e43147018e138c06e1e3e94f1bfc5be834884e6d3de6d3757b65aff5
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/cs.xpi:
+        hash: 013dbb6cbc0ee0dbd92ffd696d581cbda9cb8d4c20a9f8be13c319381ec66b53
         rename: langpack-cs@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/cy.xpi:
-        hash: 91deb7fa0c70b6888017decd7fdd7456b819867090c3fa17f04e78fbb95d5436
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/cy.xpi:
+        hash: 08c88cd8bfe05476727bafb7f947f778f7b8738954563f597d634d08b0e58b4c
         rename: langpack-cy@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/da.xpi:
-        hash: 1571914ec9c6683af309b4fb7b4c614ca4e9404b96e3ae3a4ed87661d99f9dd0
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/da.xpi:
+        hash: 78afd7d9247bc604b0170ecfe3bf605873e1aee03dcacd8b2570318ec1bc4b94
         rename: langpack-da@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/de.xpi:
-        hash: 52762e893f7fd6133a7948d4bdb567cb105c65d5a6b9237cfc8c8eff828a06a2
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/de.xpi:
+        hash: c758b948a88ec57fbe2106251a0a2f313d750ff80b44002b0f96af2136bf206d
         rename: langpack-de@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/dsb.xpi:
-        hash: 8589e984bfc58122793db528ef9fce57d16ad6f1f535ffe2fb361d75ef168950
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/dsb.xpi:
+        hash: 078c8a4c4bfe577f95c8a98b5c19c29765b7704a98e45d05b3219cc559c2a601
         rename: langpack-dsb@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/el.xpi:
-        hash: 9c7eccbe7dbca16fa51252d97fb09e1dcf043c30658de2b12a99db71e14f18ce
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/el.xpi:
+        hash: 886092dcf075b2829021f2fdd91f56517918af41f04240b7475c724784338d1d
         rename: langpack-el@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/en-CA.xpi:
-        hash: 6bd83b272f35659f372d7a4c82ee3711778256d87ac33ccdeb567266b9747812
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/en-CA.xpi:
+        hash: 625e635fb0f0e2be13a5314cef27146dcb08e859b64098ceed550d184e44e4d9
         rename: langpack-en-CA@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/en-GB.xpi:
-        hash: 3878b1c6ee5a744dff28cefd73fcc8477cfebe94abd5193d00a9c05900af97aa
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/en-GB.xpi:
+        hash: a211d038d9214671074df85e07873ba587d37d9009ad05202485c8530570141b
         rename: langpack-en-GB@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/en-US.xpi:
-        hash: 27b5d35e2cc83d800db297090d1faac513c7e44572a5331e41eb770902cdba8f
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/en-US.xpi:
+        hash: 12fa216e4b3f3703b66908ed576a5c0b8de73a3671504268394b2040bace3da8
         rename: langpack-en-US@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/eo.xpi:
-        hash: 43260b36fab36d02531f7a340dc0634fe86f2ad18b3b654dcf6f9f94a9e8426d
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/eo.xpi:
+        hash: 0291939791ea572dcd7c1b4db69fbf4fe8d02955632dbe98f563c39e2f26d22d
         rename: langpack-eo@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/es-AR.xpi:
-        hash: bbc60a55516f0f7dd90d8cf5d512cbebb1a51d71a145e3ba577f62227e567dc0
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/es-AR.xpi:
+        hash: 9dd13bb523b5d475b9a387644036ca79ddb682a165b47074690ce52c40298153
         rename: langpack-es-AR@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/es-CL.xpi:
-        hash: 28291cbbec3c6aefc958d0fa6d6bdbffe9cc1073331ca924e42a1d649b24f645
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/es-CL.xpi:
+        hash: db23fa26b7ad4ab037f0e743e7b8bf84004571a9032975b6acd3e4e2a71be889
         rename: langpack-es-CL@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/es-ES.xpi:
-        hash: 8bbce00c7ce8d31ae5bce2c9af7fa5b4ca980d63778b1f5c98cc3ebbd31a6bb3
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/es-ES.xpi:
+        hash: 4597c51a38252609b4e87e7d88952f057b288e058d41d464757ca19248b67df0
         rename: langpack-es-ES@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/es-MX.xpi:
-        hash: 48a7f08b89f4f6283977af629c659916957be31544f1a879158b7d9d5d273dac
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/es-MX.xpi:
+        hash: 648df95c41625c24ab400624059201aa79880b26737c96a564aaa0ca31e4a9ab
         rename: langpack-es-MX@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/et.xpi:
-        hash: bb728d9b5d343899a50d95b32879bf61c648200e7e087b8ee2dadcf1c11e4bc0
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/et.xpi:
+        hash: dd72a400720034c21198c8d17a6b48ab4a6afd5845317b812dd9a654647d84f9
         rename: langpack-et@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/eu.xpi:
-        hash: 124ecba8b43c17c9c816e61ff5742d2b2f374fee391045a083cd0af1a56b8a09
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/eu.xpi:
+        hash: aefb5b16424b6bbf0d7a2fc59aad01ec7f44f32639da8de0c0249ca5412c735c
         rename: langpack-eu@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/fa.xpi:
-        hash: 773fea5a2aca5a6c54638b7cf6467365911e91746a5f5363e4b74b1a850f3ddd
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/fa.xpi:
+        hash: b51b2a6bea6edcba5635800e6f1c228e87cd78d615084a6f90397ba36b443fe6
         rename: langpack-fa@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ff.xpi:
-        hash: 1644a635aa5dac44a42b52bb13bfaac6529d9a2ab9997254cf0c44f435b750c8
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ff.xpi:
+        hash: bc58b1259e06350d08da3374cc6675a04468a9408679747db01ea86cba71a349
         rename: langpack-ff@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/fi.xpi:
-        hash: 202026704b28100fa17ca0d9245505f4429380470c990d6f1dece8aa34abd04d
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/fi.xpi:
+        hash: d2e0bfc5630e096efd40e49c2e39c3a368067ac92114485eabcd7f498ea76d43
         rename: langpack-fi@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/fr.xpi:
-        hash: 2f41ef21551f2a579868d222dc5953fb87093bd882088ff08cd33f723aee6339
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/fr.xpi:
+        hash: fa91aeaac6a93ef228d23c3a92e136eac7f826f79c6e64366645c7a8b5dac886
         rename: langpack-fr@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/fur.xpi:
-        hash: 326c3d8c936c6ffc74a9e49f3fcdcda57e0ddd6fff4d2527c299500dabdf751a
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/fur.xpi:
+        hash: 1daae0c410b8fb50acf8b83a82f96719481f5d077018043e54322fb3d1d1bf54
         rename: langpack-fur@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/fy-NL.xpi:
-        hash: 81cc98d0e338a92fdd5249d4b58616e4c3b572492c6785e40b6eeaf8d0dc49e1
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/fy-NL.xpi:
+        hash: e2d7457746e7282cdd5f278133652509a4eb5ac1400938021b19bdc36cb48fb5
         rename: langpack-fy-NL@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ga-IE.xpi:
-        hash: b208530a272b0cade94922085574de078f29c04d0eb01e16ce4a6af3857ef719
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ga-IE.xpi:
+        hash: 77a1b51338edb2578850e4ed37434e538711957c57df53201d4b039c8b3fbcc2
         rename: langpack-ga-IE@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/gd.xpi:
-        hash: 263904ad558f47eca463e0473686c59e2e99dbf3c814ead91b753e014b2a82c4
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/gd.xpi:
+        hash: 9cb7e1786e668360e533235a39dc1cb2653c54ff9dbe406999abaea3bcd3f6df
         rename: langpack-gd@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/gl.xpi:
-        hash: dc32b8f48c6eb64ffacd988ad7bc59a52feb2468573153756a9697d999bbb3ff
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/gl.xpi:
+        hash: 465abc88a2ac80d3f421e43ad8dbb66f2cf7e159898fab3c0db272360fea55b4
         rename: langpack-gl@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/gn.xpi:
-        hash: 0a8c316cca5dcbfd6d432926540087c30b980f2d76419513bf0ec997031cba60
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/gn.xpi:
+        hash: 516d630676eb35a40df2ef5af3fd7f617aab7f34930cf90bfd254961827fee11
         rename: langpack-gn@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/gu-IN.xpi:
-        hash: f4ab57dd1d8332aa6aae52a5614f68dc6acca11d918a5efc31f4b47a1b8945d9
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/gu-IN.xpi:
+        hash: ed7e30e11946928f660afd826e3ab0cb08efc82bcc4fd0ef00a4f3ef9969ebc8
         rename: langpack-gu-IN@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/he.xpi:
-        hash: f07aa8326dfd7025b5386c400d54aaf8695059e0d4a1cc7ac26095c59ed21974
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/he.xpi:
+        hash: 5df66c030c02abda64606482f80a522809cc0e42d84e2bd4c2fa9fdb1d98024f
         rename: langpack-he@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/hi-IN.xpi:
-        hash: 288647bf0e374894032f58946292d076ef2230ec345ddf8d0e9348086a9b532f
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/hi-IN.xpi:
+        hash: 8c2033f9871c7a4aac7c549d1745a7ff4049a9540a6a8ec1b3955d93762abd03
         rename: langpack-hi-IN@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/hr.xpi:
-        hash: 1635383255b10d46646e3e028664b3a973e05a5205462d3f68fa35e35605f623
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/hr.xpi:
+        hash: 2ca23b99ec8e451fbb0504051b45b7cd120fc7e978577a39e4d3a425b2acde2a
         rename: langpack-hr@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/hsb.xpi:
-        hash: 57e5e1603fea735d2de06602daabf4cd0b16e9c9742454d5300782585b9b9174
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/hsb.xpi:
+        hash: 2c958ff0066dc59361b2ca5d43cd43c8cdc3e0f1f51f42d6222e5f100924d80f
         rename: langpack-hsb@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/hu.xpi:
-        hash: feadde43362b9b458b2e21b710d0679a84be08a1daf41e937bc3084c87f4538a
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/hu.xpi:
+        hash: b6764650aaaa0197bc7c6ed70aa495c1cf826862278528ac8ccea2a78895c33a
         rename: langpack-hu@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/hy-AM.xpi:
-        hash: 568524f2e7f1e5766143325e5c66749926dd10af9aec36d8f0df82ef81723879
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/hy-AM.xpi:
+        hash: f822a4500a63494aa17dd9b4f8594472c6e27b2e0a607290da228164dc8d7dc3
         rename: langpack-hy-AM@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ia.xpi:
-        hash: c30e3646665ce7dfa89ba6f7832821f2b541e397d13738860a426700583763d4
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ia.xpi:
+        hash: ed0cfeb19913b0fd621406f39cd38f5bcadefe03b134defc812c9460c76f46d9
         rename: langpack-ia@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/id.xpi:
-        hash: 82aefa9d2e77e0d0aa5f253549d8d73d6be9bcda565abfc64ec0fe5ea7d337e3
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/id.xpi:
+        hash: 0957af17b1acefe974789ac5e69729ea6aa00305ccc8e0a6daaffd24c1c2cb2f
         rename: langpack-id@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/is.xpi:
-        hash: 2db2550c4c34222c403c6324024119809a3ab7434191d522e51af7b565c6e3fa
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/is.xpi:
+        hash: 263daabd676ea27a5714fedf72e81449fb739415d2e5f8b01788503bf2c2f9a1
         rename: langpack-is@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/it.xpi:
-        hash: b6c444d113602d65f5cfa725b90dc0d37df677fc89595a786fccd9cbe577bcd3
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/it.xpi:
+        hash: b02a13333febd299594078fecd9172ff3ee8e0343f71ca339444bba23884f096
         rename: langpack-it@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ja.xpi:
-        hash: d6e6917b060ce9db371b1b686fe8a900321cad7e77714adeb9c9e59278b6e608
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ja.xpi:
+        hash: 850d5a9e34111c23bda330c63583206dd36627a40a7c44382bebab09fa4423b1
         rename: langpack-ja@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ka.xpi:
-        hash: 214e66b0c56810a1f4dee44541048e36b67af828d571aac0606845a109050aad
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ka.xpi:
+        hash: 3a2eb2b17cd5412b0249c82a87434aeda49f2bcb0b7295b5cc55785694ffae8f
         rename: langpack-ka@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/kab.xpi:
-        hash: c2d9fef31c7aa1224ab161b1509d6c573dd2cbda8fd7cacc29513e64c14b736c
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/kab.xpi:
+        hash: 10d54c8629bc332f21cf285199a4e09f0eb3f3ea85b6525442194fd0244740d5
         rename: langpack-kab@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/kk.xpi:
-        hash: fc2bc098b47e58c31ad90b26d47a90bfe6741dcd73378c9a2718e96be95a7a23
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/kk.xpi:
+        hash: 315d5184854c8cb023300f5f5bb6905be4938850e0bf05d4065076f994801c16
         rename: langpack-kk@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/km.xpi:
-        hash: 69b5a64be15fbbcfdd19d384441450a2da0876110335b30a221cc96defb78afc
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/km.xpi:
+        hash: cd7fd3531e67748bc686a0dd4069efc46160ccb5d06e3e614a1b5bffd2f9d807
         rename: langpack-km@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/kn.xpi:
-        hash: f8d14f497f34069c462b14f55a0df5cc3634c36f9ba8c77cf586882a850c6548
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/kn.xpi:
+        hash: 6de1aa555bf017946e1ef6b0ad4ccd1a5cb5cda4d2eeacbab3e620eac457c2b4
         rename: langpack-kn@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ko.xpi:
-        hash: 7e29a0424b29ffa535cc3c6bdcd15043af049d68afad3e00b5c01cb0f6046fdf
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ko.xpi:
+        hash: 2a76b04534306e48227c9bbc5d1fe21ca8a0f4ea18a97a33785a0fc42f316723
         rename: langpack-ko@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/lij.xpi:
-        hash: 972c897eea5af8105017645a972e7b25b2b8313b278e20a96620847b1972e036
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/lij.xpi:
+        hash: 86bc0654764405c88ba73b715cc5bf16f91a166594416a632f15aafde56ca9a1
         rename: langpack-lij@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/lt.xpi:
-        hash: 547a5b5f728c6cd01bb3b7050f399a3b19eff3be1ad7f3536220f9dd66c13c44
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/lt.xpi:
+        hash: 77ee1ab7114aff47e05408f69cadba64d9531df52afab1ae15f118fa41ea5860
         rename: langpack-lt@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/lv.xpi:
-        hash: 17c947ef1d0988f72f2d9c4680cddbeafec0fd1f02e96cf14c370d92e96c2aab
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/lv.xpi:
+        hash: bc6f003b9b3f91b9f15102bbca1529038916d5a1de6c0dfacadaac805a5bcc48
         rename: langpack-lv@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/mk.xpi:
-        hash: 1d645b6590d9cef75d3a122e20c3e941f5c4dd6f3b6d6f37463b6f9249e36bf3
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/mk.xpi:
+        hash: 96b7f269f5a2e9c0dafe6046b53f79072a1f0712b5e46daaf7c7743a7193f638
         rename: langpack-mk@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/mr.xpi:
-        hash: ce27e63730dde767b1acc7b3680fae4e185482d9d709df845f716f09cf172050
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/mr.xpi:
+        hash: d10ae26211e64ab3c4fe272dfcb3811bf1106103a0136412e69230286bf20798
         rename: langpack-mr@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ms.xpi:
-        hash: d75ca0147a93549e5712f1edf1166a201b2747ff7f19db17db2ed81894078e41
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ms.xpi:
+        hash: 9275686a3ec4fd5879e7056acdeb9f5ad7bf00ff78dc83cebb866e5840bdaa3e
         rename: langpack-ms@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/my.xpi:
-        hash: dead73f6ef8cdb7f40fa6670e6bbd8d55220b9a383f9058bda94baa0f10fa6d7
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/my.xpi:
+        hash: 279d728011f0fbcd4bb65f2bc6731174a7738b306bb36f6b6859c4e7a89c5a2a
         rename: langpack-my@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/nb-NO.xpi:
-        hash: a810cf1ec5d7b09bda40da4266c076269098bbe239cd8ec191472bf0bab6d509
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/nb-NO.xpi:
+        hash: edb7ec14f81b17f5d940776f8cd46ebe4a3d0f55095bfb239358c233acfc581a
         rename: langpack-nb-NO@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ne-NP.xpi:
-        hash: 9f4c793e2b0330f4ab67bce44de697cb31c2992843c0a791fc3378d9f73cb0ff
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ne-NP.xpi:
+        hash: eaa3cdc5658aa7323e50bd65629206fc9000c393eb119df2d6de7d67ec30f833
         rename: langpack-ne-NP@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/nl.xpi:
-        hash: ff3cc03b8a69a87608f38051e823437b6eecf988f9405518f411ef54a19ab9ba
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/nl.xpi:
+        hash: 7f4ff2d8c3604eb65d0fd5d71254ab79eaa9be2baea0ba5569599eed1092a817
         rename: langpack-nl@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/nn-NO.xpi:
-        hash: 811bc0d8a237600fc8481a9bb68a9f6ca784960acdccd07823bc53f9b502ea14
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/nn-NO.xpi:
+        hash: 43008e9ba2b4ae814f9ef17cd77ca907e93d84792257c0e7a6b969358823370d
         rename: langpack-nn-NO@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/oc.xpi:
-        hash: 3f078574ef0fdeb95c04f1fd90131cc2c9b654cb3278ad5a8781d3109e20fe21
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/oc.xpi:
+        hash: 98fa1664e54c34509c928a3aa13a41bb194725ee42d1caddb4b9ad3939c17f69
         rename: langpack-oc@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/pa-IN.xpi:
-        hash: abc8487715c794f869ab9c871156013230ca6c3e9cec3fb4e0d4baa8d37fde05
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/pa-IN.xpi:
+        hash: 6d0ff45f394dc5ef15034f3ac58c3548e81bf75637a32bbd36f85d53e8af26c5
         rename: langpack-pa-IN@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/pl.xpi:
-        hash: 7a545a4a1076d80b2afd1e613ade0be492ba955afa740cbe723b9bd39226f6a3
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/pl.xpi:
+        hash: f45b7cd26fe934acd2a8cd9100c4afeeeb9e6a1596fe65aacbb0cc1dd1d48f0f
         rename: langpack-pl@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/pt-BR.xpi:
-        hash: 4287243cdc0190039cbc780b66784931f01cbfb9626b325de31665eada8b20b1
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/pt-BR.xpi:
+        hash: 76b72463b296c3eecc74f5c497701bf43cab39e5542849f51125912649df2389
         rename: langpack-pt-BR@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/pt-PT.xpi:
-        hash: 1111e88a1c7214a8e4f9d55478831d3c3254b9ad6c0f4d5221b0652b842f2ca9
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/pt-PT.xpi:
+        hash: 1a55bb5ff6554902030b9b0a10a45eb4acb76ff50eca27a7400924cd186a74e4
         rename: langpack-pt-PT@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/rm.xpi:
-        hash: 8017110914d47b155401892360aef8dac0735473b158f334fd72d00a879d050f
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/rm.xpi:
+        hash: 199dff30f051b356b8a2207577d1abdaad3a598217490d409217267f494c9247
         rename: langpack-rm@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ro.xpi:
-        hash: 15c26f9f59231bb9f4bff7a5d0826a218f0b0cd7f6cf97c9700f2cdf0018191f
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ro.xpi:
+        hash: 786bc1cd2a0760daec79fb2b6cf810c3135c03605016e99d91a8055521c04f08
         rename: langpack-ro@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ru.xpi:
-        hash: a2510eaa8e446e4737455689ce13cff76b206c5e81b65dc13a5375cfbce4ca2e
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ru.xpi:
+        hash: 9f75a77fedd450a1cd386865f9cc626bb47c1c22862ac675e23b1762fd36ba4f
         rename: langpack-ru@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/sat.xpi:
-        hash: 38f0758f117addf29908df2ab053f6a74342b17ad99b23f3ead36c035306413b
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/sat.xpi:
+        hash: 15815841b5b66b23b0709925c3f37447fa1b2e6be2628b5afb32eae4284ce559
         rename: langpack-sat@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/sc.xpi:
-        hash: 5c1968a1dc562ec3be1aee5f367fe92bf500a70614441399638c857c9b3d4e20
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/sc.xpi:
+        hash: 69db727f205a47c19a6119bea10d4080ad92514dedfacec2c9bc3a4c76efa376
         rename: langpack-sc@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/sco.xpi:
-        hash: c0939a370c92be6e9054762d11893317b3adf9a95392545bb09d0a18309ee54c
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/sco.xpi:
+        hash: c6f41e62a1189ebbc01f3ef955649304aac2e874992738238455a6056220d7e3
         rename: langpack-sco@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/si.xpi:
-        hash: ec8fe73cf86c657964157df005f43c861c021858027d8462b56648f7124514c7
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/si.xpi:
+        hash: c66bdef33b88a9ebf81d60aec113697350c861aea2c176388cbb7e1d54896f8f
         rename: langpack-si@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/sk.xpi:
-        hash: e5ee094a10eb1356ca6dd0512ed52b87dd31dedbb66806109f4147029d770016
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/sk.xpi:
+        hash: 3612d6e3aa797e1e4670533547db430dea50458673c80f21b7789cb6fe3424ed
         rename: langpack-sk@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/skr.xpi:
-        hash: cdb9cf3a03e021f7fcada9aa44aa691b9fdca6c437185337fea192ff7df7829a
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/skr.xpi:
+        hash: a2604e13076d5f5a6bdb9a4e4a77785fd04316077d5947ab9d3e9fe17a010cb3
         rename: langpack-skr@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/sl.xpi:
-        hash: dfe69d842e9e29ab6029cc010b6da80dec63e0a6bc548ac7b483b27973da60fb
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/sl.xpi:
+        hash: 29d7406d3637a4cde99cb0a68a121b709776c2abd2a3d78b623481f0ef869783
         rename: langpack-sl@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/son.xpi:
-        hash: ea985883b7b5a95fb7fd3ec7cb53ea4e7528b704f751e3f18ca3008caed0b252
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/son.xpi:
+        hash: 425d6f06248e8d31e6d26286c7a1c6b89299fe2580f2f2afa13388c0a34ace28
         rename: langpack-son@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/sq.xpi:
-        hash: 4882982bc1f06346655a18afc8f90b4e07b05d1c2597e7a71273fecea114f742
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/sq.xpi:
+        hash: 8a262438a646a96ece091915fa4d7e5062f9808d5b68246ea19ef2eecc105a4f
         rename: langpack-sq@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/sr.xpi:
-        hash: 44aba3c58c8a05ffc83b8755f6fa03563878a46279ef2e27cedf36b706e4d1cf
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/sr.xpi:
+        hash: b81728c47c01c47f5b3f1decb00384c58ddd6017235bd0f13ffedecaa9b3a340
         rename: langpack-sr@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/sv-SE.xpi:
-        hash: 98dea0c45b19132c2341a03fefbf1bd3668ad0607e5342db7f184bedc1e218dc
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/sv-SE.xpi:
+        hash: d5d30dc85d5221891e7a9b5ae8331c30df1dc663f72061bf8f504d7acb758099
         rename: langpack-sv-SE@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/szl.xpi:
-        hash: 24d906ee6518c52c0e8e6343730c5d73f04fd181492711541a3678d5b11a10fb
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/szl.xpi:
+        hash: d8e2288061252ef958f4d35942b0a8b088373a6b74d7489448e1eb0eac5ccaba
         rename: langpack-szl@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ta.xpi:
-        hash: 7e7f07aa93bdcf6f89400f6055e71ba99b407e2ec61fc3708ef714c0df6854ca
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ta.xpi:
+        hash: 288a5a14db23c38dccafcbdd7fd4dd6d27d2a71cd8fdc6322df0f89c9524b9d7
         rename: langpack-ta@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/te.xpi:
-        hash: ee9880136155f7339501fc9656e97132199f5b1474f868d4d53656af2308bf8b
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/te.xpi:
+        hash: 16629097991ed23b1532bbd0b40c6f8f855d87589c300f4461ba1260005770fc
         rename: langpack-te@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/tg.xpi:
-        hash: 612b9d53abeac47e0ead54afd461943d8f9bc6302efffcd92a143cd8a2b284c1
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/tg.xpi:
+        hash: ce11039829e11bd67a5b6a015a7d0e1d455f34524af082ec9f7ac757d46cdecc
         rename: langpack-tg@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/th.xpi:
-        hash: 4d95c0aa505c5799181b21f5c81fb5dc2603dfe4d4726a7969c191a4b656e53c
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/th.xpi:
+        hash: a1389a0fb7327d87871c45f94c013e9ccaa22537c19edd0e6139294f29500400
         rename: langpack-th@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/tl.xpi:
-        hash: ce3d674351ce69dca5b9ceadeb5994225bb83cfc82b6c162859f83a028dc3eae
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/tl.xpi:
+        hash: 676e602cf2bf1fad659a278fa207143bcc83730b72dbac3cdfddb87200862978
         rename: langpack-tl@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/tr.xpi:
-        hash: c1e6d19cdcd4b68e4c8c95e4da147aefb61eff4d552f160e485b858297166fde
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/tr.xpi:
+        hash: e050090dbbea9ac80a1a9e15fee151c133489d6472d842e4d1ebd6d2a3e8c40d
         rename: langpack-tr@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/trs.xpi:
-        hash: bbb67bd0e7c6bdf3e6130ca7fd08e79255da9b736aa35486424296d348340657
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/trs.xpi:
+        hash: 37d1358efd84829ba7eb5fd7ee2a74cbd3dfde3d714bab61f4c1e9cbfe0975b6
         rename: langpack-trs@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/uk.xpi:
-        hash: dbf45e572044dde74db0cdce4f4aafe1828b174063074312670f6959930e5428
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/uk.xpi:
+        hash: 87615732b9b0f58f404466ea0be94b56e9be379cd88b910c42de438bd5a54676
         rename: langpack-uk@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/ur.xpi:
-        hash: d12bdb8d53a6e87be15abfc99b6fc5451128b04bd18b0720050b4b76d878a59f
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/ur.xpi:
+        hash: 733e24ed33c4a1bc9a2ca3226958eb52047148644f64d50f297a0e4ee18d1734
         rename: langpack-ur@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/uz.xpi:
-        hash: 522ee2a97e45a36fde3720a55e3fe951859a41d1cda47fc8a4a4a8f150a49f4b
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/uz.xpi:
+        hash: 736cb6290d78379b84423b1e609961db7e5f4d1505f179f262a8ecf87a6952e7
         rename: langpack-uz@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/vi.xpi:
-        hash: 22fc0e006bf6d52d5ccf876082758f7a7ccf48514b9c417cb9a1832c51f7e5e4
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/vi.xpi:
+        hash: a758ca265e721518a9f84472253b9af032203467d844e6c16425afbf274ec5ef
         rename: langpack-vi@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/xh.xpi:
-        hash: 553e3c4b4337ffa89d0f77794a982731a7c3552b3a33b40d6d3a7ecc7eb6a868
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/xh.xpi:
+        hash: d4b2fc75c2881837e63e9f3e0ab1ca95a4a23d8728ecc94b81d6a8fd6ff06671
         rename: langpack-xh@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/zh-CN.xpi:
-        hash: e1ef30d41dc39beb63ac5dde5724bade79d44716e3b3eea8cf3c274ca7bda992
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/zh-CN.xpi:
+        hash: 171d78e696d3829583584bcda0c9fc873722929f6cc7216f8eb21b1bcf23fb54
         rename: langpack-zh-CN@firefox.mozilla.org.xpi
         unpack: false
-    - https://ftp.mozilla.org/pub/firefox/releases/151.0.2/linux-x86_64/xpi/zh-TW.xpi:
-        hash: d4a1641379855eb5ec3bb51501251b784875c5040ebe6501bccced30daf1183e
+    - https://ftp.mozilla.org/pub/firefox/releases/151.0.4/linux-x86_64/xpi/zh-TW.xpi:
+        hash: ce8afacbdf12fda6263a82792ecab10a47bf2ebf35473dd1112d6051f73e1575
         rename: langpack-zh-TW@firefox.mozilla.org.xpi
         unpack: false
 ##@@END_UPSTREAMS

@@ -243,3 +243,11 @@ NB: Each entry *must* contain all sub-packages created by the package!
 - yajl
 - yajl-devel
 - yajl-dbginfo
+
+### Provided by pipewire
+- libjack2
+- libjack2-devel
+- jack2-dbginfo
+
+### Renamed to vlc-plugin-jack
+- vlc-plugin-jack2

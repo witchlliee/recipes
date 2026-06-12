@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : kitty
-version     : "0.47.0"
-release     : 11
+version     : "0.47.2"
+release     : 13
 homepage    : https://github.com/kovidgoyal/kitty
 upstreams   :
-    - https://github.com/kovidgoyal/kitty/releases/download/v0.47.0/kitty-0.47.0.tar.xz : 72eefbf18abfcd5538a8f3aa53cc9783692eb8e077521f49744bd96ee1f1e4dd
+    - https://github.com/kovidgoyal/kitty/releases/download/v0.47.2/kitty-0.47.2.tar.xz : 810d9eaec88fb2d877330b21badf4ee4d72ffcab0a16572874bdd6ae13f4995a
 summary     : Cross-platform, fast, feature-rich, GPU based terminal
 description : |
     kitty the fast, feature-rich, GPU based terminal emulator
