@@ -56,6 +56,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -164,6 +165,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -270,6 +272,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -373,6 +376,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -424,7 +428,7 @@
 			],
 			"files": [
 				"/usr/lib/libavcodec.so.62",
-				"/usr/lib/libavcodec.so.62.28.101"
+				"/usr/lib/libavcodec.so.62.28.102"
 			],
 			"name": "libavcodec",
 			"provides": [
@@ -485,6 +489,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -591,6 +596,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -627,7 +633,7 @@
 			],
 			"files": [
 				"/usr/lib/libavdevice.so.62",
-				"/usr/lib/libavdevice.so.62.3.101"
+				"/usr/lib/libavdevice.so.62.3.102"
 			],
 			"name": "libavdevice",
 			"provides": [
@@ -688,6 +694,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -776,6 +783,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -809,13 +817,14 @@
 				"soname(libshaderc_shared.so.1(x86_64))",
 				"soname(libswresample.so.6(x86_64))",
 				"soname(libswscale.so.9(x86_64))",
+				"soname(libtesseract.so.5.5(x86_64))",
 				"soname(libva.so.2(x86_64))",
 				"soname(libvpl.so.2(x86_64))",
 				"soname(libz.so.1(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libavfilter.so.11",
-				"/usr/lib/libavfilter.so.11.14.101"
+				"/usr/lib/libavfilter.so.11.14.102"
 			],
 			"name": "libavfilter",
 			"provides": [
@@ -876,6 +885,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -965,6 +975,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -993,7 +1004,7 @@
 			],
 			"files": [
 				"/usr/lib/libavformat.so.62",
-				"/usr/lib/libavformat.so.62.12.101"
+				"/usr/lib/libavformat.so.62.12.102"
 			],
 			"name": "libavformat",
 			"provides": [
@@ -1054,6 +1065,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -1140,6 +1152,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -1168,7 +1181,7 @@
 			],
 			"files": [
 				"/usr/lib/libavutil.so.60",
-				"/usr/lib/libavutil.so.60.26.101"
+				"/usr/lib/libavutil.so.60.26.102"
 			],
 			"name": "libavutil",
 			"provides": [
@@ -1229,6 +1242,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -1409,6 +1423,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -1480,6 +1495,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -1554,6 +1570,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -1574,7 +1591,7 @@
 			],
 			"files": [
 				"/usr/lib/libswresample.so.6",
-				"/usr/lib/libswresample.so.6.3.101"
+				"/usr/lib/libswresample.so.6.3.102"
 			],
 			"name": "libswresample",
 			"provides": [
@@ -1635,6 +1652,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -1718,6 +1736,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -1739,7 +1758,7 @@
 			],
 			"files": [
 				"/usr/lib/libswscale.so.9",
-				"/usr/lib/libswscale.so.9.5.101"
+				"/usr/lib/libswscale.so.9.5.102"
 			],
 			"name": "libswscale",
 			"provides": [
@@ -1800,6 +1819,7 @@
 				"pkgconfig(sndio)",
 				"pkgconfig(soxr)",
 				"pkgconfig(speex)",
+				"pkgconfig(tesseract)",
 				"pkgconfig(theoradec)",
 				"pkgconfig(vdpau)",
 				"pkgconfig(vorbis)",
@@ -1831,6 +1851,6 @@
 		}
 	},
 	"source-name": "ffmpeg",
-	"source-release": "31",
-	"source-version": "8.1.1"
+	"source-release": "33",
+	"source-version": "8.1.2"
 }
