@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Zulip
+Exec=zulip %U
+Terminal=false
+Type=Application
+Icon=org.zulip.Zulip
+Comment=Zulip Desktop Client for Linux
+Categories=Chat;GNOME;GTK;Network;InstantMessaging;

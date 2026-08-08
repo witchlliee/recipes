@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : plasma-workspace
-version     : "6.7.0"
-release     : 39
+version     : "6.7.4"
+release     : 43
 upstreams   :
-    - https://download.kde.org/stable/plasma/6.7.0/plasma-workspace-6.7.0.tar.xz : 9a7f2a04e8a44bf24da4d294bba270984a090ef17a082cd1eb25cb8182651d3c
+    - https://download.kde.org/stable/plasma/6.7.4/plasma-workspace-6.7.4.tar.xz : 21ec3c002929eb65377a1ae0eb105b9ab6f608049dac5493e188f51bd50398d5
 homepage    : https://kde.org/plasma-desktop/
 license     :
     - GFDL-1.2
@@ -75,19 +75,18 @@ builddeps   :
     - cmake(Qt6WaylandClient)
     - cmake(ScreenSaverDBusInterface)
     - pkgconfig(fontconfig)
+    # ice can be removed once we can do WITH_X11=OFF
+    - pkgconfig(ice)
     - pkgconfig(libcanberra)
     - pkgconfig(libpipewire-0.3)
     - pkgconfig(libqalculate)
     - pkgconfig(libxcrypt)
+    # sm and xcb-icccm can be removed once we can do WITH_X11=OFF
+    - pkgconfig(sm)
+    - pkgconfig(xcb-icccm)
     - iso-codes
     - kio-extras
     - kio-fuse
-
-    # Libs that can be removed once we can do WITH_X11=OFF
-    - pkgconfig(ice)
-    - pkgconfig(sm)
-    - pkgconfig(xcb-icccm)
-
     # AppMenuGtkModule
 tuning      :
     - lto: full

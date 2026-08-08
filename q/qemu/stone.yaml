@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : qemu
-version     : "11.0.1"
-release     : 34
+version     : "11.0.3"
+release     : 36
 homepage    : http://www.qemu.org/
 upstreams   :
-    - https://download.qemu.org/qemu-11.0.1.tar.xz : 0d235f5820278d914a3155ec27af8e4258d697ea892895570807d69c0cb8cd64
+    - https://download.qemu.org/qemu-11.0.3.tar.xz : da5fcffc32762820568b828ed430a728864d34d50b6d2f30358597760cbb0523
 summary     :  A generic and open source machine emulator and virtualizer
 description : |
      A generic and open source machine emulator and virtualizer

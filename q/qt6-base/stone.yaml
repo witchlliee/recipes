@@ -3,7 +3,7 @@
 
 name        : qt6-base
 version     : "6.11.1"
-release     : 27
+release     : 30
 homepage    : https://www.qt.io
 upstreams   :
     - https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtbase-everywhere-src-6.11.1.tar.xz : d9594a31228aa23ad6b531719a29b45f0f3989fe6c136d45767ea179f233c1ac
@@ -41,6 +41,7 @@ builddeps   :
     - pkgconfig(libjpeg)
     - pkgconfig(libpcre2-16)
     - pkgconfig(libpng)
+    - pkgconfig(libpq)
     - pkgconfig(libproxy-1.0)
     - pkgconfig(libsystemd)
     - pkgconfig(libudev)
@@ -67,7 +68,7 @@ builddeps   :
     - pkgconfig(xkbcommon-x11)
     - pkgconfig(zlib)
     # TODO:
-    # libsctp, odbc, interbase, postgres, lttng-ust
+    # libsctp, odbc, interbase, lttng-ust
 setup       : |
     %patch %(pkgdir)/0001-Adjust-build-flags.patch
     %patch %(pkgdir)/0001-Support-stateless-config-directories.patch
@@ -87,6 +88,8 @@ setup       : |
     %patch %(pkgdir)/upstream/QTBUG-110448.patch
     %patch %(pkgdir)/upstream/QTBUG-145390.patch
     %patch %(pkgdir)/upstream/QTBUG-123455.patch
+    # Technically not merged into upstream yet but it probably will be shortly
+    %patch %(pkgdir)/upstream/upstream-750214.patch
 
     ## 2024-01-18 Note
     # Enabling -DQT_FEATURE_openssl_hash=ON with Qt 6.6.1 seems to break some applications use of TLS.
@@ -186,6 +189,12 @@ packages    :
         paths:
             - /usr/lib/qt6/plugins/sqldrivers/libqsqlmysql.so
 
+    - "%(name)-postgres":
+        summary: Qt6 PostgreSQL driver
+        description: Qt6 PostgreSQL driver
+        paths:
+            - /usr/lib/qt6/plugins/sqldrivers/libqsqlpsql.so
+
     - "%(name)-devel":
         paths:
             - /usr/bin
@@ -212,6 +221,7 @@ packages    :
         rundeps:
             - "%(name)-gui"
             - "%(name)-mysql"
+            - "%(name)-postgres"
             - cmake(VulkanHeaders)
             - pkgconfig(gl)
             - pkgconfig(libzstd)

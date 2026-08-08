@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : kde-cli-tools
-version     : "6.7.0"
-release     : 23
+version     : "6.7.4"
+release     : 27
 upstreams   :
-    - https://download.kde.org/stable/plasma/6.7.0/kde-cli-tools-6.7.0.tar.xz : 2720ff7efbf97bef469b02f54489f3d9b2a0b98c871aedb915acdbaf99f31998
+    - https://download.kde.org/stable/plasma/6.7.4/kde-cli-tools-6.7.4.tar.xz : 9b93730cbea9eecd2b17c84603c1496d18d08749d2861f87a7552f463d7aecb0
 homepage    : https://kde.org/plasma-desktop/
 license     :
     - GPL-2.0-or-later

@@ -2,11 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : rust
-version     : "1.96.0"
-release     : 37
+### IMPORTANT NOTE: Rust does not have a stable ABI. This is particularly important for the kernel where the version of Rust used to build the kernel must exactly match the version used to build extramodules. In other words you MUST do a round of kernel rebuilds whenever Rust is upgraded.
+version     : "1.97.1"
+release     : 40
 homepage    : https://www.rust-lang.org/
 upstreams   :
-    - https://static.rust-lang.org/dist/rustc-1.96.0-src.tar.xz : b99ce16cdf0ecfc761b585ac84d131b46733465a02f8ecd0ff2de9713c62ee09
+    - https://static.rust-lang.org/dist/rustc-1.97.1-src.tar.xz : 0ed06fdaffd4722a7702e0b4eebfafc897ab8f513e8e1b247cdd7e5c6df6ded2
 summary     : Rust programming language compiler + tools
 description : |
     Rust programming language compiler + tools

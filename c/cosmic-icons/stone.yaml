@@ -2,13 +2,13 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : cosmic-icons
-version     : "1.0.16"
-release     : 41
+version     : "1.5.0"
+release     : 46
 summary     : Cosmic Icons by System76
 license     : CC-BY-SA-4.0
 homepage    : https://github.com/pop-os/cosmic-icons
 upstreams   :
-    - https://github.com/pop-os/cosmic-icons/archive/refs/tags/epoch-1.0.16.tar.gz :  d23aecb6a5586795c2fc0f305c0055b413e788980db1b983705f5eaaa864862c
+    - https://github.com/pop-os/cosmic-icons/archive/refs/tags/epoch-1.5.0.tar.gz :  e6caffc4c93f5afdaae3fbda4f3cc14363d3539cda1b0c5f478d32a8bb141c4c
 description : |
     Cosmic Icons by System76
 builddeps   :

@@ -6,11 +6,11 @@ default: (_build build_file)
 set dotenv-load
 set quiet
 # respect variables set in .env file next to the present justfile
-boulder := env_var_or_default('BOULDER', 'boulder')
-boulder_args := env_var_or_default('BOULDER_ARGS', '')
-boulder_profile := env_var_or_default('BOULDER_PROFILE', 'local-x86_64')
+boulder := env('BOULDER', 'boulder')
+boulder_args := env('BOULDER_ARGS', '')
+boulder_profile := env('BOULDER_PROFILE', 'local-x86_64')
 build_file := join(invocation_directory(), "stone.yaml")
-local_repo := env_var_or_default('LOCAL_REPO', '${HOME}/.cache/local_repo/x86_64')
+local_repo := env('LOCAL_REPO', '${HOME}/.cache/local_repo/x86_64')
 
 # Build the stone.yaml recipe using boulder
 _build target:
@@ -124,6 +124,10 @@ ls-local: create-local
 # move .stones to LOCAL_REPO (create if it doesn't exist) and reindex it
 mv-local: create-local
     cd {{ invocation_directory() }} && mv -v *.stone {{local_repo}}/ && moss index {{local_repo}}
+
+# remove individual .stones present in LOCAL_REPO (create if it doesn't exist) and reindex it.
+rm-local target: create-local
+    cd {{ invocation_directory() }} && rm -v {{local_repo}}/{{target}} && moss index {{local_repo}}
 
 # Check for upstream updates
 updates:

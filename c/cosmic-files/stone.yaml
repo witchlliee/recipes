@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : cosmic-files
-version     : "1.0.16"
-release     : 48
+version     : "1.5.0"
+release     : 53
 homepage    : https://github.com/pop-os/cosmic-files
 upstreams   :
-    - https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.16.tar.gz :  bf7919e64524ed8fe4b3c1a64e2903cc5fdbc86853354a107174df6af26c2775
+    - https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.5.0.tar.gz :  da8567bcd0a15ca6522a8800ec800701f8e994ef5da52513b3afdf95370e3bf1
 summary     : Cosmic Desktop File Browser
 description : |
     Cosmic desktop File Browser

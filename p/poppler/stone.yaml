@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : poppler
-version     : "26.06.0"
-release     : 23
+version     : "26.08.0"
+release     : 25
 homepage    : https://poppler.freedesktop.org
 upstreams   :
-    - https://poppler.freedesktop.org/poppler-26.06.0.tar.xz : 4cb4e5a3dc8cb5eec751c8a23c8ba19f61f96dedc0cd07d2aee6b0c8e2cf6ba4
-    - git|https://gitlab.freedesktop.org/poppler/test.git : b85e4d1ce75636b3e727555a9d31da34ad771c1c
+    - https://poppler.freedesktop.org/poppler-26.08.0.tar.xz : dc906e68cea698109706ac6aa3d2c9d4512fcfcac42d90b8afcda486d1b9abd0
+    - git|https://gitlab.freedesktop.org/poppler/test.git : 5368d7e64682ab07a22ce241fe0671234229ab84
 summary     : A PDF rendering library
 description : |
     Poppler is a PDF rendering library based on the xpdf-3.0 code base
@@ -47,13 +47,9 @@ build       : |
 install     : |
     %cmake_install
 check       : |
-    # These tests have been failing since https://gitlab.freedesktop.org/poppler/poppler/-/commit/2df6cf6e5c5dccecefc4b6f1dfba8c65c3aa94b0
-    # for an unknown reason. Are we perhaps not initializing a database or something?
-    %cmake_test \
-        --exclude-regex 'signature/valid/.*|signature/invalid/.*|signature/digest_mismatch/.*|check_qt6_signature_basics'
+    %cmake_test
 workload    : |
-    %cmake_test \
-        --exclude-regex 'signature/valid/.*|signature/invalid/.*|signature/digest_mismatch/.*|check_qt6_signature_basics'
+    %cmake_test
 packages    :
     - "%(name)-glib":
         summary: A PDF rendering library - glib bindings

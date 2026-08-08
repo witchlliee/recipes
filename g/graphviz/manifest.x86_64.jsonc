@@ -27,7 +27,6 @@
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libX11.so.6(x86_64))",
 				"soname(libXrender.so.1(x86_64))",
 				"soname(libc.so.6(x86_64))",
@@ -100,27 +99,27 @@
 				"/usr/bin/unflatten",
 				"/usr/bin/vimdot",
 				"/usr/lib/graphviz/libgvplugin_core.so.8",
-				"/usr/lib/graphviz/libgvplugin_core.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_core.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_dot_layout.so.8",
-				"/usr/lib/graphviz/libgvplugin_dot_layout.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_dot_layout.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_gs.so.8",
-				"/usr/lib/graphviz/libgvplugin_gs.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_gs.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_kitty.so.8",
-				"/usr/lib/graphviz/libgvplugin_kitty.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_kitty.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_neato_layout.so.8",
-				"/usr/lib/graphviz/libgvplugin_neato_layout.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_neato_layout.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_pango.so.8",
-				"/usr/lib/graphviz/libgvplugin_pango.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_pango.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_poppler.so.8",
-				"/usr/lib/graphviz/libgvplugin_poppler.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_poppler.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_rsvg.so.8",
-				"/usr/lib/graphviz/libgvplugin_rsvg.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_rsvg.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_vt.so.8",
-				"/usr/lib/graphviz/libgvplugin_vt.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_vt.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_webp.so.8",
-				"/usr/lib/graphviz/libgvplugin_webp.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_webp.so.8.0.13",
 				"/usr/lib/graphviz/libgvplugin_xlib.so.8",
-				"/usr/lib/graphviz/libgvplugin_xlib.so.8.0.12",
+				"/usr/lib/graphviz/libgvplugin_xlib.so.8.0.13",
 				"/usr/share/graphviz/gvedit/attrs.txt",
 				"/usr/share/graphviz/gvpr/addedges",
 				"/usr/share/graphviz/gvpr/addranks",
@@ -195,7 +194,8 @@
 				"/usr/share/man/man1/twopi.1",
 				"/usr/share/man/man1/unflatten.1",
 				"/usr/share/man/man1/vimdot.1",
-				"/usr/share/man/man7/graphviz.7"
+				"/usr/share/man/man7/graphviz.7",
+				"/usr/share/moss/triggers/tx.d/graphviz_plugins.yaml"
 			],
 			"name": "graphviz",
 			"provides": [
@@ -573,7 +573,7 @@
 			],
 			"files": [
 				"/usr/lib/graphviz/libgvplugin_gdk.so.8",
-				"/usr/lib/graphviz/libgvplugin_gdk.so.8.0.12"
+				"/usr/lib/graphviz/libgvplugin_gdk.so.8.0.13"
 			],
 			"name": "graphviz-gtk3",
 			"provides": [
@@ -649,7 +649,6 @@
 				"pkgconfig(xaw6)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libexpat.so.1(x86_64))",
 				"soname(libltdl.so.7(x86_64))",
@@ -660,13 +659,13 @@
 				"/usr/lib/libcdt.so.6",
 				"/usr/lib/libcdt.so.6.0.3",
 				"/usr/lib/libcgraph.so.8",
-				"/usr/lib/libcgraph.so.8.1.1",
+				"/usr/lib/libcgraph.so.8.1.2",
 				"/usr/lib/libgvc.so.7",
-				"/usr/lib/libgvc.so.7.0.11",
+				"/usr/lib/libgvc.so.7.0.12",
 				"/usr/lib/libgvpr.so.2",
-				"/usr/lib/libgvpr.so.2.0.11",
+				"/usr/lib/libgvpr.so.2.0.12",
 				"/usr/lib/libpathplan.so.4",
-				"/usr/lib/libpathplan.so.4.0.7",
+				"/usr/lib/libpathplan.so.4.0.8",
 				"/usr/lib/libxdot.so.4",
 				"/usr/lib/libxdot.so.4.0.2"
 			],
@@ -730,6 +729,6 @@
 		}
 	},
 	"source-name": "graphviz",
-	"source-release": "20",
-	"source-version": "15.1.0"
+	"source-release": "22",
+	"source-version": "15.1.1"
 }

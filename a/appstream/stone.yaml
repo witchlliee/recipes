@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : appstream
-version     : "1.1.2"
-release     : 16
+version     : "1.1.5"
+release     : 19
 homepage    : https://www.freedesktop.org/wiki/Distributions/AppStream/
 upstreams   :
-    - https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.2.tar.xz : 46b4257100e25a6468ceed7b3ab82441f47b119da3398d30aea6d7b91174b586
+    - https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.5.tar.xz : fc57337e250b0d27e75ac4216cc69a76d03c54011a5da5c7a2c57711a3d0cdf9
 summary     : Tools and libraries to work with AppStream metadata
 description : |
     AppStream is a cross-distribution effort for enhancing the way we interact with the software repositories provided by (Linux) distributions by standardizing software component metadata.
@@ -24,6 +24,7 @@ builddeps   :
     - pkgconfig(bash-completion)
     - pkgconfig(glib-2.0)
     - pkgconfig(gobject-introspection-1.0)
+    - pkgconfig(libblake3)
     - pkgconfig(libcurl)
     - pkgconfig(libfyaml)
     - pkgconfig(librsvg-2.0)

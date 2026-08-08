@@ -27,7 +27,6 @@
 				"binary(openssl)",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"kf6-kirigami-addons",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libKF6ConfigCore.so.6(x86_64))",
 				"soname(libKF6ConfigGui.so.6(x86_64))",
 				"soname(libKF6CoreAddons.so.6(x86_64))",
@@ -60,7 +59,7 @@
 			"files": [
 				"/usr/bin/krdpserver",
 				"/usr/lib/libKRdp.so.6",
-				"/usr/lib/libKRdp.so.6.7.0",
+				"/usr/lib/libKRdp.so.6.7.4",
 				"/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_krdpserver.so",
 				"/usr/lib/systemd/user-preset/00-krdp.preset",
 				"/usr/lib/systemd/user/app-org.kde.krdpserver.service",
@@ -137,8 +136,6 @@
 				"/usr/share/locale/sk/LC_MESSAGES/krdpserver.mo",
 				"/usr/share/locale/sl/LC_MESSAGES/kcm_krdpserver.mo",
 				"/usr/share/locale/sl/LC_MESSAGES/krdpserver.mo",
-				"/usr/share/locale/sv/LC_MESSAGES/kcm_krdpserver.mo",
-				"/usr/share/locale/sv/LC_MESSAGES/krdpserver.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/kcm_krdpserver.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/krdpserver.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kcm_krdpserver.mo",
@@ -193,6 +190,6 @@
 		}
 	},
 	"source-name": "krdp",
-	"source-release": "24",
-	"source-version": "6.7.0"
+	"source-release": "28",
+	"source-version": "6.7.4"
 }

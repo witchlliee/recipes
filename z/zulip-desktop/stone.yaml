@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : zulip-desktop
-version     : "5.12.2"
-release     : 2
+version     : "5.12.4"
+release     : 5
 upstreams   :
-    - https://github.com/zulip/zulip-desktop/archive/v5.12.2.tar.gz : ffd0473910889797ba8f0944c7819f38c4210c44e2e886ff8cb63a2a2f2b75e5
+    - https://github.com/zulip/zulip-desktop/archive/refs/tags/v5.12.4.tar.gz : 2db95b7fe239dde54470d269150185118515ee232ef52684345db55a42c9edfd
 homepage    : https://zulipchat.com
 license     : Apache-2.0
 summary     : Desktop client for Zulip
@@ -13,22 +13,24 @@ description : |
     Real-time team chat based on the email threading model
 networking  : true
 builddeps   :
-    - binary(npm)
+    - binary(pnpm)
 rundeps     :
     - binary(xdg-open)
 setup       : |
     %patch %(pkgdir)/0001-Disable-auto-update.patch
+    %patch %(pkgdir)/0001-linux-Fix-Wayland-app-ID.patch
 
-    npm install
+    pnpm install
 build       : |
-    npm run pack
+    pnpm run pack
 install     : |
     zulipdir=%(libdir)/%(name)
 
     %install_dir %(installroot)$zulipdir
     cp -a dist/linux-unpacked/* %(installroot)$zulipdir
 
-    %install_file build/zulip.png -t %(installroot)%(datadir)/icons/hicolor/512x512/apps/
+    %install_file %(pkgdir)/org.zulip.Zulip.desktop -t %(installroot)%(datadir)/applications
+    %install_file build/zulip.png %(installroot)%(datadir)/icons/hicolor/512x512/apps/org.zulip.Zulip.png
 
-    %install_file %(pkgdir)/Zulip.desktop -t %(installroot)%(datadir)/applications
-    %install_exe %(pkgdir)/zulip.sh %(installroot)%(bindir)/zulip
+    %install_dir %(installroot)%(bindir)
+    ln -srv %(installroot)${zulipdir}/zulip %(installroot)%(bindir)/zulip

@@ -1,0 +1,41 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : plasma-nano
+version     : "6.7.4"
+release     : 3
+upstreams   :
+    - https://download.kde.org/stable/plasma/6.7.4/plasma-nano-6.7.4.tar.xz : 03ea97b57856df1bab618595b8777e519d8e244c6f2d9d77fdafcf553c7d5885
+homepage    : https://kde.org/plasma-desktop/
+license     :
+    - GPL-2.0-or-later
+summary     : KDE Plasma nano
+description : |
+    A minimal Plasma shell package intended for embedded devices
+builddeps   :
+    # Temporary, boulder doesn't handle build ordering resolution correctly when builddeps are added by macros, so add ECM manually
+    - cmake(ECM)
+    - cmake(KF6Config)
+    - cmake(KF6CoreAddons)
+    - cmake(KF6I18n)
+    - cmake(KF6ItemModels)
+    - cmake(KF6Service)
+    - cmake(KF6Svg)
+    - cmake(KF6WindowSystem)
+    - cmake(KWayland)
+    - cmake(Plasma)
+    - cmake(Qt6Core5Compat)
+    - cmake(Qt6Qml)
+    - cmake(Qt6Svg)
+rundeps     :
+    - libplasma
+    - qt6-5compat
+tuning      :
+    - lto: full
+    - optimize: speed
+setup       : |
+    %cmake_kf6
+build       : |
+    %cmake_build
+install     : |
+    %cmake_install

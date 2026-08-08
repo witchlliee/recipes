@@ -50,6 +50,7 @@
 				"soname(libKF6ConfigGui.so.6(x86_64))",
 				"soname(libKF6CoreAddons.so.6(x86_64))",
 				"soname(libKF6I18n.so.6(x86_64))",
+				"soname(libKF6I18nQml.so.6(x86_64))",
 				"soname(libKF6IconThemes.so.6(x86_64))",
 				"soname(libQt6Core.so.6(x86_64))",
 				"soname(libQt6DBus.so.6(x86_64))",
@@ -124,6 +125,7 @@
 				"/usr/share/locale/th/LC_MESSAGES/easyeffects.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/easyeffects.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/easyeffects.mo",
+				"/usr/share/locale/vi/LC_MESSAGES/easyeffects.mo",
 				"/usr/share/locale/zh_CN/LC_MESSAGES/easyeffects.mo",
 				"/usr/share/locale/zh_Hant/LC_MESSAGES/easyeffects.mo",
 				"/usr/share/metainfo/com.github.wwmm.easyeffects.metainfo.xml"
@@ -135,6 +137,6 @@
 		}
 	},
 	"source-name": "easyeffects",
-	"source-release": "28",
-	"source-version": "8.2.4"
+	"source-release": "30",
+	"source-version": "8.2.8"
 }

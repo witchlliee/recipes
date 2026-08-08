@@ -4,7 +4,7 @@
 	"packages": {
 		"zulip-desktop": {
 			"build-depends": [
-				"binary(npm)"
+				"binary(pnpm)"
 			],
 			"depends": [
 				"binary(xdg-open)",
@@ -115,12 +115,25 @@
 				"/usr/lib/zulip-desktop/resources.pak",
 				"/usr/lib/zulip-desktop/resources/app-update.yml",
 				"/usr/lib/zulip-desktop/resources/app.asar",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/LICENSE",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/build/Release/xattr.node",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/index.js",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/package.json",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/src/async.c",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/src/async.h",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/src/error.c",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/src/error.h",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/src/sync.c",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/src/sync.h",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/src/util.c",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/src/util.h",
+				"/usr/lib/zulip-desktop/resources/app.asar.unpacked/node_modules/fs-xattr/src/xattr.c",
 				"/usr/lib/zulip-desktop/snapshot_blob.bin",
 				"/usr/lib/zulip-desktop/v8_context_snapshot.bin",
 				"/usr/lib/zulip-desktop/vk_swiftshader_icd.json",
 				"/usr/lib/zulip-desktop/zulip",
-				"/usr/share/applications/Zulip.desktop",
-				"/usr/share/icons/hicolor/512x512/apps/zulip.png"
+				"/usr/share/applications/org.zulip.Zulip.desktop",
+				"/usr/share/icons/hicolor/512x512/apps/org.zulip.Zulip.png"
 			],
 			"name": "zulip-desktop",
 			"provides": [
@@ -134,6 +147,6 @@
 		}
 	},
 	"source-name": "zulip-desktop",
-	"source-release": "2",
-	"source-version": "5.12.2"
+	"source-release": "5",
+	"source-version": "5.12.4"
 }

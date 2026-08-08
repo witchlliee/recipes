@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : nano
-version     : "9.0"
-release     : 40
+version     : "9.2"
+release     : 42
 homepage    : https://www.nano-editor.org/
 upstreams   :
-    - https://www.nano-editor.org/dist/v9/nano-9.0.tar.xz : 9f384374b496110a25b73ad5a5febb384783c6e3188b37063f677ac908013fde
+    - https://www.nano-editor.org/dist/v9/nano-9.2.tar.xz : 05ecb99247b782e8a5b3a25ed4101dd034b0236902f7449bc9795b717642f7e9
 summary     : GNU Text Editor
 description : |
     Nano is a small and simple text editor for use on the terminal.

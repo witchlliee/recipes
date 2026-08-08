@@ -1,0 +1,35 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : croc
+version     : "11.0.2"
+release     : 7
+homepage    : https://github.com/schollz/croc
+upstreams   :
+    - https://github.com/schollz/croc/archive/refs/tags/v11.0.2.tar.gz : 833c4cb804d1ebdca4594803d0bba05f5bd8663a148fa3ee9c55e3184c805abb
+summary     : Securely transfer files and folders between any two computers
+description : |
+    croc is a tool that allows any two computers to simply and securely
+    transfer files and folders. It provides end-to-end encryption using PAKE,
+    supports cross-platform transfers, multiple files, resuming interrupted
+    transfers, and can relay through a proxy without requiring port forwarding
+    or a local server.
+license     : MIT
+networking  : true
+setup       : |
+    %go_mod
+build       : |
+    CGO_ENABLED=0 go build -v \
+        -ldflags "-s -w -X github.com/schollz/croc/v10/src/cli.Version=v%(version)"
+
+    ./croc generate-fish-completion > croc.fish
+install     : |
+    %install_bin croc
+    %install_file LICENSE -t %(installroot)%(datadir)/licenses/%(name)/
+
+    %install_file src/install/bash_autocomplete %(installroot)%(bashcompletionsdir)/croc
+    %install_file src/install/zsh_autocomplete %(installroot)%(zshcompletionsdir)/_croc
+    %install_file croc.fish %(installroot)%(fishcompletionsdir)/croc.fish
+    %install_file croc.service -t %(installroot)%(libdir)/systemd/system/
+check       : |
+    go test -skip TestRemoteLookupIPTimeout ./...

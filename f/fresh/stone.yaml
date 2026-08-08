@@ -2,18 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : fresh
-version     : "0.3.10"
-release     : 6
+version     : "0.4.6"
+release     : 9
 homepage    : https://getfresh.dev/
 upstreams   :
-    - https://github.com/sinelaw/fresh/archive/refs/tags/v0.3.10.tar.gz : 1e4592e19cf7a95df5901e21d350f88534caf7fec9348801b76eabbf8d8d9c1d
+    - https://github.com/sinelaw/fresh/archive/refs/tags/v0.4.6.tar.gz : 38d06554b8c825750c34ba273824590dfcb23861921b55dbd509b6efca81896e
 summary     : A terminal text editor built in rust
 description : |
   A lightweight, fast terminal-based text editor with LSP support and TypeScript plugins built with Rust.
-builddeps   :
-    - binary(cargo)
-license     :
-    - GPL-2.0-only
+checkdeps   :
+    - binary(python3)
+license     : GPL-2.0-only
 networking  : true
 setup       : |
     %cargo_fetch
@@ -25,4 +24,4 @@ install     : |
     %install_file crates/fresh-editor/flatpak/io.github.sinelaw.fresh.metainfo.xml %(installroot)%(datadir)/metainfo/io.github.sinelaw.fresh.metainfo.xml
     %install_file crates/fresh-editor/flatpak/io.github.sinelaw.fresh.svg %(installroot)%(datadir)/icons/hicolor/scalable/apps/io.github.sinelaw.fresh.svg
 check       : |
-    %cargo_test --lib -- --skip test_save_to_unwritable_directory --skip test_save_to_unwritable_file
+    %cargo_test --lib

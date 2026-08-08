@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : godot
-version     : "4.6.3"
-release     : 13
+version     : "4.7.1"
+release     : 15
 homepage    : https://godotengine.org
 upstreams   :
-    - https://github.com/godotengine/godot/archive/refs/tags/4.6.3-stable.tar.gz: fa22b5f974125057087c9ef725eae582dbc5e39385dc377e8d5dbc295b367e1c
+    - https://github.com/godotengine/godot/archive/refs/tags/4.7.1-stable.tar.gz: eb2378d76964b25d5ecb61e16c934b59ae4f605c42cdb1a2a49eb7bf6d33dcf0
 summary     : Godot Engine – Multi-platform 2D and 3D game engine
 description : |
     Godot Engine is a feature-packed, cross-platform game engine to create 2D and 3D games from a unified interface.
@@ -35,8 +35,8 @@ builddeps   :
     - pkgconfig(ogg)
     - pkgconfig(vorbis)
     - pkgconfig(vulkan)
-    - pkgconfig(xkbcommon)
     - pkgconfig(wayland-scanner)
+    - pkgconfig(xkbcommon)
     - pkgconfig(zlib)
     # TODO enet, libtheora, mbedtls, miniupnpc, wslay, speech-dispatcher
 build       : |
@@ -94,5 +94,5 @@ install     : |
     %install_file misc/dist/linux/org.godotengine.Godot.appdata.xml -t %(installroot)/usr/share/metainfo
     %install_file misc/dist/linux/org.godotengine.Godot.xml -t %(installroot)/usr/share/mime/packages
 
-    %install_file icon.png %(installroot)/usr/share/icons/hicolor/256x256/apps/godot.png
-    %install_file icon.svg %(installroot)/usr/share/icons/hicolor/scalable/apps/godot.svg
+    %install_file misc/logo/icon.png %(installroot)/usr/share/icons/hicolor/256x256/apps/godot.png
+    %install_file misc/logo/icon.svg %(installroot)/usr/share/icons/hicolor/scalable/apps/godot.svg

@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : hugo
-version     : "0.160.1"
-release     : 7
+version     : "0.164.0"
+release     : 9
 homepage    : https://gohugo.io/
 upstreams   :
-    - https://github.com/gohugoio/hugo/archive/refs/tags/v0.160.1.tar.gz : aaab9991fcc691aba35f8702c3cec65e2ba074408de70a9f66f7b868c28b8cdf
+    - https://github.com/gohugoio/hugo/archive/refs/tags/v0.164.0.tar.gz : 4d32803c88e76179bc48cf640821977dd1cd83a8aa64ee17766557a15e538825
 summary     : Fast and flexible static site generator written in Go
 description : |
     Hugo is a fast and flexible static site generator written in Go
@@ -17,19 +17,10 @@ builddeps   :
     - binary(git)
     - binary(go)
 setup       : |
-    go mod download
+    %go_mod
 build       : |
-    # export CGO_CPPFLAGS="${CPPFLAGS}"
-    export CGO_CFLAGS="${CFLAGS}"
-    export CGO_CXXFLAGS="${CXXFLAGS}"
-    export CGO_LDFLAGS="${LDFLAGS}"
-    go build -v \
-        -trimpath \
-        -mod=readonly \
-        -modcacherw \
-        -buildmode=pie \
-        -tags extended,withdeploy \
-        -ldflags "-s -w -linkmode=external -buildid=''"
+    export GOFLAGS+=" -ldflags=-s -ldflags=-w -ldflags=-buildid="
+    go build -v -tags extended,withdeploy
 
     ./hugo gen man
     ./hugo completion bash > hugo.bash

@@ -4,7 +4,7 @@
 	"packages": {
 		"fresh": {
 			"build-depends": [
-				"binary(cargo)"
+				"binary(python3)"
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
@@ -26,6 +26,6 @@
 		}
 	},
 	"source-name": "fresh",
-	"source-release": "6",
-	"source-version": "0.3.10"
+	"source-release": "9",
+	"source-version": "0.4.6"
 }

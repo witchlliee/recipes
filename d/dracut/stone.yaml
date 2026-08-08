@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : dracut
-version     : "111"
-release     : 13
+version     : "112"
+release     : 15
 homepage    : https://github.com/dracut-ng/dracut-ng
 upstreams   :
-    - https://github.com/dracut-ng/dracut-ng/archive/refs/tags/111.tar.gz : ca949190692e91611ef16ea3642c0f764f63948860f3f742524310728c991493
+    - https://github.com/dracut-ng/dracut-ng/archive/refs/tags/112.tar.gz : 839d21eb4bd27bb0ee40d74c9da46df088c2e1425fcd8c3ea62b7e3a3dd28a91
 summary     : dracut is an event driven initramfs infrastructure.
 description : |
     dracut (the tool) is used to create an initramfs image by copying tools and files from an installed system and combining it with the dracut framework, usually found in /usr/lib/dracut/modules.d.

@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : sqlite
-version     : "3.53.2"
-release     : 21
+version     : "3.53.4"
+release     : 23
 homepage    : https://www.sqlite.org
 upstreams   :
-    - https://www.sqlite.org/2026/sqlite-autoconf-3530200.tar.gz:
-        hash: 588ad51949419a56ebe81fe56193d510c559eb94c9a57748387860b5d3069316
+    - https://www.sqlite.org/2026/sqlite-autoconf-3530400.tar.gz:
+        hash: 0e9483900e92cd5de8fd48d16bf9200145a61f7fd5be542a5ac81d8a9516eb9c
         unpackdir: sqlite
 
     - git|https://github.com/ClickHouse/ClickBench.git:

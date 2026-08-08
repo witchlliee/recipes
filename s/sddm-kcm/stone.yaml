@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : sddm-kcm
-version     : "6.7.0"
-release     : 19
+version     : "6.7.4"
+release     : 23
 upstreams   :
-    - https://download.kde.org/stable/plasma/6.7.0/sddm-kcm-6.7.0.tar.xz : 03b1dea3a738048a064633b9edb802716004f4630b3f6a7f068fd074d719ef4d
+    - https://download.kde.org/stable/plasma/6.7.4/sddm-kcm-6.7.4.tar.xz : e29498674bf54140dfec8480186cdd0da515a2e6292c733208adeb4175512969
 homepage    : https://kde.org/plasma-desktop/
 license     : GPL-2.0-or-later
 summary     : Config module for SDDM

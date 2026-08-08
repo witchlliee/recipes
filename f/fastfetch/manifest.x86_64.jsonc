@@ -7,6 +7,7 @@
 				"cmake(VulkanHeaders)",
 				"pkgconfig(ImageMagick)",
 				"pkgconfig(OpenCL)",
+				"pkgconfig(chafa)",
 				"pkgconfig(dbus-1)",
 				"pkgconfig(dconf)",
 				"pkgconfig(ddcutil)",
@@ -26,7 +27,8 @@
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(libc.so.6(x86_64))"
+				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))"
 			],
 			"files": [
 				"/usr/bin/fastfetch",
@@ -82,6 +84,6 @@
 		}
 	},
 	"source-name": "fastfetch",
-	"source-release": "19",
-	"source-version": "2.63.1"
+	"source-release": "26",
+	"source-version": "2.67.0"
 }

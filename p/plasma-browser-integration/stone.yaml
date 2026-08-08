@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : plasma-browser-integration
-version     : "6.7.0"
-release     : 19
+version     : "6.7.4"
+release     : 23
 upstreams   :
-    - https://download.kde.org/stable/plasma/6.7.0/plasma-browser-integration-6.7.0.tar.xz : cd5b483ee2891de6bb062deaeb6afe0c0a29e951e072510c012c15b49b1b954b
+    - https://download.kde.org/stable/plasma/6.7.4/plasma-browser-integration-6.7.4.tar.xz : 298ee5e14c935dd811ad3686a2a6422fe8d2ea7f0b6946595268c6ac6b252325
 homepage    : https://kde.org/plasma-desktop/
 license     : GPL-3.0-or-later
 summary     : Integrate browsers into the Plasma Desktop

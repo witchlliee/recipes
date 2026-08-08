@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : containerd
-version     : "2.3.1"
-release     : 18
+version     : "2.3.3"
+release     : 20
 homepage    : https://containerd.io/
 upstreams   :
-    - https://github.com/containerd/containerd/archive/refs/tags/v2.3.1.tar.gz : 9de4cb8bfb27964a8ffd95e35326b7279ea2e2a6506da16c2533d3f523f12c11
+    - https://github.com/containerd/containerd/archive/refs/tags/v2.3.3.tar.gz : fcff2096ef20f1bc1d939bc55a8b831ea3eface574463fd7dc770b33ffe317b2
 summary     : An open and reliable container runtime
 description : |
     An open and reliable container runtime
@@ -23,12 +23,8 @@ rundeps     :
 setup       : |
     sed -i 's|/usr/local/bin/containerd|/usr/bin/containerd|' containerd.service
 
-    go mod vendor
+    %go_mod
 build       : |
-    export GO111MODULE=auto
-    export GOFLAGS="-trimpath -mod=readonly -modcacherw"
-    export CGO_CFLAGS="${CGO_CFLAGS}"
-
     # Git commit corresponding to the version tag
     GITCOMMIT=$(git ls-remote https://github.com/containerd/containerd.git refs/tags/v%(version)^{} |awk '{print $1}')
 
@@ -55,5 +51,5 @@ install     : |
 #     # Needs true root
 #     GOFLAGS="-trimpath" make test || true
 tune        :
-    - lto
+    - lto: full
     - optimize: speed

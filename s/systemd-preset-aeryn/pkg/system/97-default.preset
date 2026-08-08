@@ -3,6 +3,10 @@ disable systemd-timesyncd.service
 disable systemd-networkd.service
 disable systemd-networkd-wait-online.service
 
+# Enable if installed
+enable systemd-oomd.socket
+enable systemd-oomd.service
+
 # System stuff
 enable dbus.socket
 enable dbus-broker.service
@@ -30,10 +34,11 @@ enable avahi-daemon.*
 enable cups.socket
 enable cups.path
 
-# Nvidia driver defaults
+# Nvidia driver support services
 enable nvidia-hibernate.service
 enable nvidia-resume.service
 enable nvidia-suspend.service
+enable nvidia-suspend-then-hibernate.service
 
 # Virtualization driver specific daemons. Start by default at boot for VM
 # autostart, but shutdown after 2 mins and socket activated thereafter
@@ -100,6 +105,7 @@ enable lvm2-lvmpolld.*
 enable lvm-devices-import.*
 enable dm-event.*
 enable dmraid-activation.service
+enable multipathd.service
 
 enable spice-vdagentd.service
 enable qemu-guest-agent.service
@@ -136,13 +142,16 @@ enable docker.socket
 # Run fstrim weekly on filesystems listed in fstab
 enable fstrim.timer
 
+# Periodic xfs online scrub; honors the on-disk autofsck= property
+enable xfs_scrub_all.timer
+
 # Enable Waydroid
 enable waydroid-container.service
 
 # Enable nfs-client.target
 enable nfs-client.target
 
-# For out of the box configuration
+# Various misc package services
 enable com.system76.Scheduler.service
 enable lactd.service
 enable lxcfs.service
@@ -150,8 +159,9 @@ enable netavark-dhcp-proxy.service
 enable netavark-nftables-reload.service
 enable scx_loader.service
 enable tinysparql-xdg-portal-3.service
-enable xwayland-satellite.service
 enable keyd.service
+enable cardwired.service
+enable tailscaled.service
 
 # ZFS support
 enable zfs-import-cache.service

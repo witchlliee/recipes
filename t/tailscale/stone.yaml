@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : tailscale
-version     : "1.98.3"
-release     : 12
+version     : "1.102.2"
+release     : 17
 homepage    : https://github.com/tailscale/tailscale
 upstreams   :
-    - https://github.com/tailscale/tailscale/archive/refs/tags/v1.98.3.tar.gz : 9283ddbbf0a21ad37c725e09ac302aa96b37f00ca4b4142c00519cf983de0aa1
+    - https://github.com/tailscale/tailscale/archive/refs/tags/v1.102.2.tar.gz : 66c447b5555aa89e0690dc21e0ec59421302ceaa982f3ccc0df686b16f5d5505
 summary     :  Private WireGuard® networks made easy
 description : |
     The easiest, most secure way to use WireGuard and 2FA.
@@ -28,10 +28,10 @@ build       : |
 install     : |
    %install_exe %(workdir)/tailscale %(installroot)%(bindir)/tailscale
    %install_exe %(workdir)/tailscaled %(installroot)%(sbindir)/tailscaled
+   %install_file LICENSE -t %(installroot)%(datadir)/licenses/%(name)/
+
    %install_file %(workdir)/cmd/tailscaled/tailscaled.service %(installroot)/%(libdir)/systemd/system/tailscaled.service
    %install_file %(workdir)/cmd/tailscaled/tailscaled.defaults %(installroot)%(vendordir)/tailscale/tailscaled
-
-   %install_file %(pkgdir)/*.preset -t %(installroot)/%(libdir)/systemd/system-preset/
 
    %(workdir)/tailscale completion bash | %install_file /dev/stdin %(installroot)%(bashcompletionsdir)/tailscale
    %(workdir)/tailscale completion zsh | %install_file /dev/stdin %(installroot)%(zshcompletionsdir)/_tailscale

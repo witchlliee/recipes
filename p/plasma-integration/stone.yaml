@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : plasma-integration
-version     : "6.7.0"
-release     : 24
+version     : "6.7.4"
+release     : 28
 upstreams   :
-    - https://download.kde.org/stable/plasma/6.7.0/plasma-integration-6.7.0.tar.xz : 537b05cd4bab1b0706fb31f9823f8666df7295e647e75614f02b6bf1458eff1d
+    - https://download.kde.org/stable/plasma/6.7.4/plasma-integration-6.7.4.tar.xz : 54e65b1170499ccc567f9bb7586809d4739ea728efcf1bc877d1709db6e7347a
 homepage    : https://kde.org/plasma-desktop/
 license     :
     - GPL-2.0-or-later

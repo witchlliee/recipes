@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : plasma-login-manager
-version     : "6.7.0"
-release     : 20
+version     : "6.7.4"
+release     : 24
 homepage    : https://kde.org/plasma-desktop/
 upstreams   :
-    - https://download.kde.org/stable/plasma/6.7.0/plasma-login-manager-6.7.0.tar.xz : 03c58596141cc1262c2b1c5749d9b64d6e7225c9728d421c6e5afb6493566ee1
+    - https://download.kde.org/stable/plasma/6.7.4/plasma-login-manager-6.7.4.tar.xz : 8ba5f9a5b31b2cb09d6846c590d09891dadb9a5625426b8552577299093b67fd
 summary     : Display manager for KDE Plasam
 description : |
     Plasma Login provides a display manager for KDE Plasma, forked from SDDM and with a new frontend providing a greeter, wallpaper plugin integration and System Settings module (KCM).

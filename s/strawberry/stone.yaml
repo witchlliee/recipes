@@ -1,18 +1,16 @@
-#
-# SPDX-FileCopyrightText: © 2020-2025 Serpent OS Developers
-#
+# SPDX-FileCopyrightText: 2020-2026 AerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
-#
+
 name        : strawberry
-version     : 1.2.19
-release     : 2
-upstreams   :
-    - https://github.com/strawberrymusicplayer/strawberry/releases/download/1.2.19/strawberry-1.2.19.tar.xz : a4490de1ce5c1ce327ced1e6a7554f052ead4182a4f492fb6214747336fd9ab7
+version     : "1.2.26"
+release     : 10
 homepage    : https://www.strawberrymusicplayer.org
-license     : GPL-3.0-or-later
+upstreams   :
+    - https://github.com/strawberrymusicplayer/strawberry/releases/download/1.2.26/strawberry-1.2.26.tar.xz : ab12eaa6139a4a5466bb40ea9dc22cad913c578090402eba5ef8410cb5772b46
 summary     : Strawberry is a audio player and music collection organizer.
 description : |
     Strawberry is a audio player and music collection organizer. It is a fork of Clementine released in 2018 aimed at music collectors, audio enthusiasts and audiophiles.
+license     : GPL-3.0-or-later
 builddeps   :
     - cmake(Boost)
     - cmake(KDSingleApplication-qt6)
@@ -22,8 +20,8 @@ builddeps   :
     - pkgconfig(alsa)
     - pkgconfig(fftw3)
     - pkgconfig(gdk-pixbuf-2.0)
-    - pkgconfig(glib-2.0)
     - pkgconfig(gio-2.0)
+    - pkgconfig(glib-2.0)
     - pkgconfig(gstreamer-1.0)
     - pkgconfig(gstreamer-app-1.0)
     - pkgconfig(gstreamer-audio-1.0)

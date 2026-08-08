@@ -55,6 +55,7 @@
 				"soname(libfreerdp-server3.so.3(x86_64))",
 				"soname(libfreerdp3.so.3(x86_64))",
 				"soname(libfuse3.so.4(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))",
@@ -68,6 +69,7 @@
 				"soname(libtss2-esys.so.0(x86_64))",
 				"soname(libtss2-mu.so.0(x86_64))",
 				"soname(libtss2-rc.so.0(x86_64))",
+				"soname(libtss2-tctildr.so.0(x86_64))",
 				"soname(libva-drm.so.2(x86_64))",
 				"soname(libva.so.2(x86_64))",
 				"soname(libvncserver.so.1(x86_64))",
@@ -164,6 +166,6 @@
 		}
 	},
 	"source-name": "gnome-remote-desktop",
-	"source-release": "20",
-	"source-version": "50.1"
+	"source-release": "23",
+	"source-version": "50.2"
 }

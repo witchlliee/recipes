@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : layer-shell-qt
-version     : "6.7.0"
-release     : 24
+version     : "6.7.4"
+release     : 28
 upstreams   :
-    - https://download.kde.org/stable/plasma/6.7.0/layer-shell-qt-6.7.0.tar.xz : e6f48b6ebe2c3caaa3c2ef6d8470550904d030ad3496bc10a5409875db2daab0
+    - https://download.kde.org/stable/plasma/6.7.4/layer-shell-qt-6.7.4.tar.xz : 6a5b064619739c6f4a2de70c56abfbadfc334dcb626152a1e8188a807ca86567
 homepage    : https://kde.org/plasma-desktop/
 license     :
     - BSD-3-Clause

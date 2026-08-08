@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : kmenuedit
-version     : "6.7.0"
-release     : 18
+version     : "6.7.4"
+release     : 22
 upstreams   :
-    - https://download.kde.org/stable/plasma/6.7.0/kmenuedit-6.7.0.tar.xz : f27fed5c8989ad00adc714bc7f377adfca9742c4ccd3afff9478d502eeafffab
+    - https://download.kde.org/stable/plasma/6.7.4/kmenuedit-6.7.4.tar.xz : bc8daed5c859904e580ca8415b88836fcde198957fa672b5b28de4017398b0c3
 homepage    : https://kde.org/plasma-desktop/
 license     :
     - GFDL-1.2-only

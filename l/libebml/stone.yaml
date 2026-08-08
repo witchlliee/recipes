@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : libebml
+version     : "1.4.7"
+release     : 3
+homepage    : https://github.com/Matroska-Org/libebml
+upstreams   :
+    - https://github.com/Matroska-Org/libebml/archive/refs/tags/release-1.4.7.tar.gz : c55c5528e7510bc41b574dcac47bc6e3503fb3b9e78ad8c42541bf07d5ed71a9
+summary     : A C++ library to parse EBML files
+description : |
+    A C++ library to parse EBML files.
+license     : LGPL-2.1-or-later
+builddeps   :
+    - cmake(utf8cpp)
+setup       : |
+    %cmake \
+        -DBUILD_SHARED_LIBS=ON
+build       : |
+    %cmake_build
+install     : |
+    %cmake_install

@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : kpipewire
-version     : "6.7.0"
-release     : 25
+version     : "6.7.4"
+release     : 30
 upstreams   :
-    - https://download.kde.org/stable/plasma/6.7.0/kpipewire-6.7.0.tar.xz : dbf839b779c508c2020bdf9d642762387cba85059291deab38e8a0c15223badb
+    - https://download.kde.org/stable/plasma/6.7.4/kpipewire-6.7.4.tar.xz : 2020a6a94bb7726ec68004c7946ad7f6ed450dcee8f4e8b710c3680755afb1ab
 homepage    : https://kde.org/plasma-desktop/
 license     : LGPL-2.1-or-later
 summary     : Components relating to pipewire use in Plasma

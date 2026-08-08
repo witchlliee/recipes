@@ -37,6 +37,7 @@
 				"soname(libcairo.so.2(x86_64))",
 				"soname(libcrypto.so.3(x86_64))",
 				"soname(libdbus-1.so.3(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libharfbuzz.so.0(x86_64))",
 				"soname(liblcms2.so.2(x86_64))",
 				"soname(libm.so.6(x86_64))",
@@ -854,7 +855,7 @@
 				"/usr/share/doc/kitty/html/_images/social_previews/summary_actions_1745a1bd.png",
 				"/usr/share/doc/kitty/html/_images/social_previews/summary_binary_478594b0.png",
 				"/usr/share/doc/kitty/html/_images/social_previews/summary_build_e554a463.png",
-				"/usr/share/doc/kitty/html/_images/social_previews/summary_changelog_fcc7547c.png",
+				"/usr/share/doc/kitty/html/_images/social_previews/summary_changelog_fa6a3b75.png",
 				"/usr/share/doc/kitty/html/_images/social_previews/summary_clipboard_673291d1.png",
 				"/usr/share/doc/kitty/html/_images/social_previews/summary_color-stack_b2e66ffc.png",
 				"/usr/share/doc/kitty/html/_images/social_previews/summary_conf_6d817f14.png",
@@ -1136,6 +1137,7 @@
 				"/usr/share/man/man1/kitten-@-resize-os-window.1",
 				"/usr/share/man/man1/kitten-@-resize-window.1",
 				"/usr/share/man/man1/kitten-@-run.1",
+				"/usr/share/man/man1/kitten-@-screenshot.1",
 				"/usr/share/man/man1/kitten-@-scroll-window.1",
 				"/usr/share/man/man1/kitten-@-select-window.1",
 				"/usr/share/man/man1/kitten-@-send-key.1",
@@ -1227,6 +1229,6 @@
 		}
 	},
 	"source-name": "kitty",
-	"source-release": "14",
-	"source-version": "0.47.3"
+	"source-release": "19",
+	"source-version": "0.48.2"
 }

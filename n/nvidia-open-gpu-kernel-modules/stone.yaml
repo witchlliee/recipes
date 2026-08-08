@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : nvidia-open-gpu-kernel-modules
-version     : "610.43.02"
-release     : 99
+version     : "610.57.04"
+release     : 113
 homepage    : https://github.com/NVIDIA/open-gpu-kernel-modules
 upstreams   :
-    - https://download.nvidia.com/XFree86/NVIDIA-kernel-module-source/NVIDIA-kernel-module-source-610.43.02.tar.xz:
-        hash: 9609d2c47aba779afca994f171cb5bf2236a6bdc81eb5b008c10fc8972bc9cef
+    - https://download.nvidia.com/XFree86/NVIDIA-kernel-module-source/NVIDIA-kernel-module-source-610.57.04.tar.xz:
+        hash: 0be1ce1905f579e68c1701c1286e15ddf02f5243e625773f5a997a8325dc856d
         unpack: false
         rename: nvidia.tar.xz
 summary     : NVIDIA open GPU kernel modules
@@ -45,6 +45,12 @@ environment : |
         fi
     done
 
+    # This solves a build failure from pahole generating BTF
+    # https://codeberg.org/gentoo/gentoo/src/commit/f2c6ed05e6123477cb505eeb7cbbd00b7d347971/x11-drivers/nvidia-drivers/nvidia-drivers-610.57.04-r1.ebuild#L211
+    # │B│ Unsupported DW_TAG_atomic_type(0x47): type: 0x39dcb
+    # │B│ Error while encoding BTF.
+    export CFLAGS+=" -g0"
+
     # TODO: Fix this just rejecting all LDFLAGS
     unset LDFLAGS
 setup       : |
@@ -54,7 +60,7 @@ setup       : |
 
         pushd ${_kernel}
         # This is where patches would go
-        ## None for now
+        %patch %(pkgdir)/ibt-support.patch
         popd
     done
 build       : |
@@ -62,16 +68,25 @@ build       : |
         pushd ${_kernel}
         %ccache_zero
         export CCACHE_BASEDIR="${PWD}"
-        %make CC=${CC} LD=${LD} KERNEL_UNAME=${_kernel} NV_VERBOSE=1 modules
+        %make CC=${CC} LD=${LD} OBJCOPY=${OBJCOPY} KERNEL_UNAME=${_kernel} NV_VERBOSE=1 modules
         %ccache_stats
         popd
     done
 install     : |
-    %install_file %(pkgdir)/nvidia-blacklist.conf %(installroot)%(libdir)/modprobe.d/nvidia-blacklist.conf
+    %install_file %(pkgdir)/nvidia-blacklist.modprobe %(installroot)%(libdir)/modprobe.d/nvidia-blacklist.conf
     %install_file %(pkgdir)/nvidia-uvm.conf %(installroot)%(libdir)/modules-load.d/nvidia-uvm.conf
+
+    # Various Nvidia modprobe settings (taken from CachyOS)
+    # https://github.com/CachyOS/CachyOS-Settings/blob/master/usr/lib/modprobe.d/nvidia.conf
+    %install_file %(pkgdir)/nvidia.modprobe %(installroot)%(libdir)/modprobe.d/nvidia.conf
+    # Sleep settings
+    # https://github.com/CachyOS/CachyOS-PKGBUILDS/blob/master/nvidia/nvidia-utils/nvidia-sleep.conf
+    %install_file %(pkgdir)/nvidia-sleep.modprobe %(installroot)%(libdir)/modprobe.d/nvidia-sleep.conf
 
     %install_dir %(installroot)%(docdir)/%(name)/
     echo "VIRTUAL" > %(installroot)%(docdir)/%(name)/README
+
+    # TODO: Eventually we want the modprobe configs in a separate initrd for deduplication
 
     for _kernel in ${kernels[@]}; do
         pushd ${_kernel}
@@ -103,21 +118,21 @@ install     : |
 
         # Create an initrd for .ko files
         mkdir -p initrd/%(libdir)/modules/${_kernel}/extra/drivers/video
-        %install_file %(pkgdir)/nvidia.conf initrd/%(libdir)/modprobe.d/nvidia.conf
-        %install_file %(pkgdir)/nvidia-blacklist.conf initrd/%(libdir)/modprobe.d/nvidia-blacklist.conf
+        %install_file %(pkgdir)/nvidia.modprobe initrd/%(libdir)/modprobe.d/nvidia.conf
+        %install_file %(pkgdir)/nvidia-blacklist.modprobe initrd/%(libdir)/modprobe.d/nvidia-blacklist.conf
+        %install_file %(pkgdir)/nvidia-sleep.modprobe initrd/%(libdir)/modprobe.d/nvidia-sleep.conf
         find %(installroot)%(libdir)/modules -name '*.ko' -exec cp -v {} initrd/%(libdir)/modules/${_kernel}/extra/drivers/video \;
         touch initrd/.dracut-depmod-invalidate
         pushd initrd
         %install_dir %(installroot)%(libdir)/kernel/${_kernel}
-        find . | cpio -o -H newc | zstd -19 -T0 -c > %(installroot)%(libdir)/kernel/${_kernel}/60-nvidia.initrd
+        find . | cpio -o -H newc | zstd -19 -T0 -c > %(installroot)%(libdir)/kernel/${_kernel}/60-nvidia-%(version)-%(release).initrd
         popd
 
         # Compress modules with zstd
         find "%(installroot)%(libdir)/modules/${_kernel}/" -name '*.ko' -print -exec zstd {} \; -exec rm -v {} \;
 
-        # This is a stupid hack because blsforme doesn't seem to support version-independent initrds yet
-        cp -a /usr/lib/kernel/initrd.d/55-nvidia-firmware.initrd %(installroot)%(libdir)/kernel/${_kernel}/55-nvidia-firmware.initrd
-
+        # This is a stupid hack because blsforme doesn't support version-independent initrds yet
+        cp -a /usr/lib/kernel/initrd.d/55-nvidia-firmware*.initrd %(installroot)%(libdir)/kernel/${_kernel}/
         popd
     done
 packages    :

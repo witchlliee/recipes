@@ -11,12 +11,17 @@
 				"binary(sudo)",
 				"dbus-broker",
 				"kmod",
+				"kmscon",
 				"linux-pam",
 				"lvm2",
 				"ntpd-rs",
 				"shadow",
 				"systemd",
+				"systemd-boot",
+				"systemd-coredump",
 				"systemd-preset-aeryn",
+				"systemd-resolved",
+				"systemd-udev",
 				"tzdata",
 				"util-linux",
 				"uutils-coreutils"
@@ -28,6 +33,7 @@
 		},
 		"pkgset-aeryn-base-desktop": {
 			"depends": [
+				"kmscon-gl",
 				"libva-intel-hybrid-driver",
 				"libva-intel-media-driver",
 				"mesa-dri-drivers",
@@ -87,6 +93,6 @@
 		}
 	},
 	"source-name": "pkgset-aeryn",
-	"source-release": "22",
-	"source-version": "2025.12"
+	"source-release": "25",
+	"source-version": "2026.07"
 }

@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : github-cli
-version     : "2.89.0"
-release     : 12
+version     : "2.97.0"
+release     : 15
 homepage    : https://github.com/cli/cli
 upstreams   :
-    - https://github.com/cli/cli/archive/refs/tags/v2.89.0.tar.gz : bc9c11f75e4aeb7e1f0bd5f543a3edabb8958655025f8cdc3d9bbe14435a7441
+    - https://github.com/cli/cli/archive/refs/tags/v2.97.0.tar.gz : 18cd1280f70911c9c16dd5965cdac0b9e6b16e54466f0c892ce2829ecdd339a6
 summary     : GitHub CLI brings GitHub to your terminal
 description : |
     GitHub CLI brings GitHub to your terminal. It reduces context switching,
@@ -20,12 +20,16 @@ rundeps     :
     - binary(xdg-open)  # For opening browser
 networking  : true
 setup       : |
-    go mod vendor
+    # As-yet unmerged telemetry patch, see https://github.com/cli/cli/issues/13260
+    %patch %(pkgdir)/cb2509cb612cf9111a12a7960afd10b0c9d2dede.patch
+    %go_mod
 build       : |
     env GH_VERSION=%(version) \
+        GO_BUILDTAGS=notelemetry \
         %make bin/gh manpages completions
 install     : |
     %make_install prefix=/usr
+    %install_file LICENSE -t %(installroot)%(datadir)/licenses/%(name)/
 check       : |
     # Force the test to pass as it is not working with "TestMigrationWriteErrors".
     %make test || true

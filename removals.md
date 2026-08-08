@@ -251,3 +251,19 @@ NB: Each entry *must* contain all sub-packages created by the package!
 
 ### Renamed to vlc-plugin-jack
 - vlc-plugin-jack2
+
+### Renamed
+- systemd-32bit
+- systemd-32bit-devel
+- systemd-devel
+
+### Merged into libjpeg-turbo-devel
+- turbojpeg-devel
+
+### Replaced by malm
+- ferrite
+- ferrite-dbginfo
+
+### Replaced by gnist
+- oxidize
+- oxidize-dbginfo

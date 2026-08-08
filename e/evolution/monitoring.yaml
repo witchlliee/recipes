@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+releases:
+  id: 10934
+  rss: https://gitlab.gnome.org/GNOME/evolution/-/releases
+security:
+  cpe:
+  - vendor: gnome
+    product: evolution

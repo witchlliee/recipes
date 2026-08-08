@@ -7,7 +7,6 @@
 				"binary(nasm)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))"
 			],
 			"files": [
@@ -24,24 +23,29 @@
 				"binary(nasm)"
 			],
 			"depends": [
-				"libjpeg-turbo"
+				"libjpeg-turbo",
+				"turbojpeg"
 			],
 			"files": [
 				"/usr/include/jconfig.h",
 				"/usr/include/jerror.h",
 				"/usr/include/jmorecfg.h",
 				"/usr/include/jpeglib.h",
+				"/usr/include/turbojpeg.h",
 				"/usr/lib/cmake/libjpeg-turbo/libjpeg-turboConfig.cmake",
 				"/usr/lib/cmake/libjpeg-turbo/libjpeg-turboConfigVersion.cmake",
 				"/usr/lib/cmake/libjpeg-turbo/libjpeg-turboTargets-release.cmake",
 				"/usr/lib/cmake/libjpeg-turbo/libjpeg-turboTargets.cmake",
 				"/usr/lib/libjpeg.so",
-				"/usr/lib/pkgconfig/libjpeg.pc"
+				"/usr/lib/libturbojpeg.so",
+				"/usr/lib/pkgconfig/libjpeg.pc",
+				"/usr/lib/pkgconfig/libturbojpeg.pc"
 			],
 			"name": "libjpeg-turbo-devel",
 			"provides": [
 				"cmake(libjpeg-turbo)",
-				"pkgconfig(libjpeg)"
+				"pkgconfig(libjpeg)",
+				"pkgconfig(libturbojpeg)"
 			]
 		},
 		"libjpeg-turbo-utils": {
@@ -79,12 +83,11 @@
 				"binary(nasm)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libturbojpeg.so.0",
-				"/usr/lib/libturbojpeg.so.0.4.0"
+				"/usr/lib/libturbojpeg.so.0.5.0"
 			],
 			"name": "turbojpeg",
 			"provides": [
@@ -96,20 +99,15 @@
 				"binary(nasm)"
 			],
 			"depends": [
-				"turbojpeg"
+				"libjpeg-turbo-devel"
 			],
 			"files": [
-				"/usr/include/turbojpeg.h",
-				"/usr/lib/libturbojpeg.so",
-				"/usr/lib/pkgconfig/libturbojpeg.pc"
+				"/usr/share/doc/turbojpeg-devel/README"
 			],
-			"name": "turbojpeg-devel",
-			"provides": [
-				"pkgconfig(libturbojpeg)"
-			]
+			"name": "turbojpeg-devel"
 		}
 	},
 	"source-name": "libjpeg-turbo",
-	"source-release": "11",
-	"source-version": "3.1.4.1"
+	"source-release": "13",
+	"source-version": "3.2.0"
 }

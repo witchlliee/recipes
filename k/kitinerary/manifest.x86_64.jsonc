@@ -40,7 +40,7 @@
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libphonenumber.so.9(x86_64))",
-				"soname(libpoppler.so.161(x86_64))",
+				"soname(libpoppler.so.163(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libxml2.so.16(x86_64))",
 				"soname(libz.so.1(x86_64))"
@@ -48,7 +48,7 @@
 			"files": [
 				"/usr/lib/kf6/kitinerary-extractor",
 				"/usr/lib/libKPim6Itinerary.so.6",
-				"/usr/lib/libKPim6Itinerary.so.6.7.2",
+				"/usr/lib/libKPim6Itinerary.so.6.7.3",
 				"/usr/share/locale/ar/LC_MESSAGES/kitinerary6.mo",
 				"/usr/share/locale/ast/LC_MESSAGES/kitinerary6.mo",
 				"/usr/share/locale/ca/LC_MESSAGES/kitinerary6.mo",
@@ -282,6 +282,6 @@
 		}
 	},
 	"source-name": "kitinerary",
-	"source-release": "27",
-	"source-version": "26.04.2"
+	"source-release": "31",
+	"source-version": "26.04.3"
 }
