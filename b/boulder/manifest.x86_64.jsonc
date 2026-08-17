@@ -817,7 +817,6 @@
 				"/usr/share/boulder/macros/arch/x86_64-v3x.yaml",
 				"/usr/share/boulder/macros/arch/x86_64.yaml",
 				"/usr/share/boulder/profile.d/default-x86_64.kdl",
-				"/usr/share/boulder/recipeTemplate.yaml",
 				"/usr/share/fish/completions/boulder.fish",
 				"/usr/share/man/man1/boulder-build.1",
 				"/usr/share/man/man1/boulder-cache-clean.1",
@@ -844,6 +843,6 @@
 		}
 	},
 	"source-name": "boulder",
-	"source-release": "163",
-	"source-version": "0.26.8+git.8de81e4"
+	"source-release": "164",
+	"source-version": "0.26.8+git.4e60c77"
 }

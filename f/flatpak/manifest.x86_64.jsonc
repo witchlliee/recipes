@@ -46,6 +46,7 @@
 				"binary(fusermount3)",
 				"binary(xdg-dbus-proxy)",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
+				"polkit",
 				"soname(libXau.so.6(x86_64))",
 				"soname(libappstream.so.5(x86_64))",
 				"soname(libarchive.so.13(x86_64))",
@@ -53,6 +54,7 @@
 				"soname(libcurl.so.4(x86_64))",
 				"soname(libdconf.so.1(x86_64))",
 				"soname(libfuse3.so.4(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgdk_pixbuf-2.0.so.0(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
@@ -81,7 +83,7 @@
 				"/usr/lib/flatpak/revokefs-fuse",
 				"/usr/lib/girepository-1.0/Flatpak-1.0.typelib",
 				"/usr/lib/libflatpak.so.0",
-				"/usr/lib/libflatpak.so.0.11800.0",
+				"/usr/lib/libflatpak.so.0.11801.0",
 				"/usr/lib/systemd/system-environment-generators/60-flatpak-system-only",
 				"/usr/lib/systemd/system/flatpak-system-helper.service",
 				"/usr/lib/systemd/user-environment-generators/60-flatpak",
@@ -366,6 +368,6 @@
 		}
 	},
 	"source-name": "flatpak",
-	"source-release": "21",
-	"source-version": "1.18.0"
+	"source-release": "23",
+	"source-version": "1.18.1"
 }
